@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <UnitOperationName>AddOnce</UnitOperationName>
+    <Parameters> 
+      <reactant>...</reactant>
+      <amount>...</amount>
+      <timing>...</timing>
+      <rate_of_addition>...</rate_of_addition>
+      <temperature>...</temperature>
+      <pressure>...</pressure>
+      <stirring>...</stirring>
+      <solvent>...</solvent>
+      <pH>...</pH>
+      <safety_considerations>...</safety_considerations>
+      <reaction_environment>...</reaction_environment>
+      <equipment>...</equipment>
+    </Parameters>
+</UnitOperation>
+  
