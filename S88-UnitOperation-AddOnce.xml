@@ -2,18 +2,18 @@
 <UnitOperation>
   <UnitOperationName>AddOnce</UnitOperationName>
     <Parameters> 
-      <reactant>...</reactant>
-      <amount>...</amount>
-      <timing>...</timing>
-      <rate_of_addition>...</rate_of_addition>
-      <temperature>...</temperature>
-      <pressure>...</pressure>
-      <stirring>...</stirring>
-      <solvent>...</solvent>
-      <pH>...</pH>
-      <safety_considerations>...</safety_considerations>
-      <reaction_environment>...</reaction_environment>
-      <equipment>...</equipment>
+      <Reactant>...</Reactant>
+      <Amount>...</Amount>
+      <Timing>...</Timing>
+      <RateOfAddition>...</RateOfAddition>
+      <Temperature>...</Temperature>
+      <Pressure>...</Pressure>
+      <Stirring>...</Stirring>
+      <Solvent>...</Solvent>
+      <PH>...</PH>
+      <SafetyConsiderations>...</SafetyConsiderations>
+      <ReactionEnvironment>...</ReactionEnvironment>
+      <Equipment>...</Equipment>
     </Parameters>
 </UnitOperation>
   
