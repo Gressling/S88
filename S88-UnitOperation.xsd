@@ -8,18 +8,18 @@
         <xs:element name="Parameters">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="reactant" type="xs:string"/>
-              <xs:element name="amount" type="xs:string"/>
-              <xs:element name="timing" type="xs:string"/>
-              <xs:element name="rate_of_addition" type="xs:string"/>
-              <xs:element name="temperature" type="xs:string"/>
-              <xs:element name="pressure" type="xs:string"/>
-              <xs:element name="stirring" type="xs:string"/>
-              <xs:element name="solvent" type="xs:string"/>
-              <xs:element name="pH" type="xs:string"/>
-              <xs:element name="safety_considerations" type="xs:string"/>
-              <xs:element name="reaction_environment" type="xs:string"/>
-              <xs:element name="equipment" type="xs:string"/>
+              <xs:element name="Reactant" type="xs:string"/>
+              <xs:element name="Amount" type="xs:string"/>
+              <xs:element name="Timing" type="xs:string"/>
+              <xs:element name="RateOfAddition" type="xs:string"/>
+              <xs:element name="Temperature" type="xs:string"/>
+              <xs:element name="Pressure" type="xs:string"/>
+              <xs:element name="Stirring" type="xs:string"/>
+              <xs:element name="Solvent" type="xs:string"/>
+              <xs:element name="PH" type="xs:string"/>
+              <xs:element name="SafetyConsiderations" type="xs:string"/>
+              <xs:element name="ReactionEnvironment" type="xs:string"/>
+              <xs:element name="Equipment" type="xs:string"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
