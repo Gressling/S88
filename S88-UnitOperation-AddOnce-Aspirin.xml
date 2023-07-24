@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <UnitOperationName>AddOnce</UnitOperationName>
+    <Parameters>
+        <Reactant>Salicylic Acid</Reactant>
+        <Amount>10 grams</Amount>
+        <Timing>At the beginning</Timing>
+        <RateOfAddition>All at once</RateOfAddition>
+        <Temperature>25°C</Temperature>
+        <Pressure>Atmospheric pressure</Pressure>
+        <Stirring>Moderate stirring</Stirring>
+        <Solvent>Acetic Anhydride</Solvent>
+        <PH>Neutral</PH>
+        <SafetyConsiderations>Use protective gloves and safety goggles</SafetyConsiderations>
+        <ReactionEnvironment>Inert atmosphere (nitrogen gas)</ReactionEnvironment>
+        <Equipment>Round-bottom flask, condenser, heating mantle</Equipment>
+    </Parameters>
+</UnitOperation>
