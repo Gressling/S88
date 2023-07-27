@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <UnitOperation>
-  <UnitOperationName>AddOnce</UnitOperationName>
+  <AddOnce>
     <Parameters> 
       <Reactant>...</Reactant>
       <Amount>...</Amount>
@@ -15,5 +15,6 @@
       <ReactionEnvironment>...</ReactionEnvironment>
       <Equipment>...</Equipment>
     </Parameters>
+  </AddOnce>
 </UnitOperation>
   
