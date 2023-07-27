@@ -4,7 +4,7 @@
   <xs:element name = "UnitOperation">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name = "AddOnce" type="xs:string" />
+        <xs:element name = "AddOnce">
         <xs:element name="Parameters">
           <xs:complexType>
             <xs:sequence>
