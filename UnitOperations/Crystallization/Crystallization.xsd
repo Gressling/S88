@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Crystallization">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Parameters">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Compound" type="xs:string"/>
+                    <xs:element name="Solvent" type="xs:string"/>
+                    <xs:element name="Temperature" type="xs:string"/>
+                    <xs:element name="CoolingRate" type="xs:string"/>
+                    <xs:element name="StirringSpeed" type="xs:string"/>
+                    <xs:element name="CrystallizationTime" type="xs:string"/>
+                    <xs:element name="SeedCrystal" type="xs:string"/>
+                    <xs:element name="SafetyConsiderations" type="xs:string"/>
+                    <xs:element name="Equipment" type="xs:string"/>
+                    <xs:element name="CrystalSize" type="xs:string"/>
+                    <xs:element name="CrystalShape" type="xs:string"/>
+                    <xs:element name="CrystalPurity" type="xs:string"/>
+                    <xs:element name="Yield" type="xs:string"/>
+                    <xs:element name="NucleationInductionTime" type="xs:string"/>
+                    <xs:element name="GrowthRate" type="xs:string"/>
+                    <xs:element name="Solubility" type="xs:string"/>
+                    <xs:element name="CoolingProfile" type="xs:string"/>
+                    <xs:element name="Additives" type="xs:string"/>
+                    <xs:element name="pH" type="xs:string"/>
+                    <xs:element name="SeedCrystalSize" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

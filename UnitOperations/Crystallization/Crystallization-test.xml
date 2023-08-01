@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Crystallization>
+    <Parameters>
+      <Compound>Aspirin</Compound>
+      <Solvent>Acetone</Solvent>
+      <Temperature>30°C</Temperature>
+      <CoolingRate>2°C/min</CoolingRate>
+      <StirringSpeed>300 RPM</StirringSpeed>
+      <CrystallizationTime>1 hour</CrystallizationTime>
+      <SeedCrystal>None</SeedCrystal>
+      <SafetyConsiderations>Wear safety goggles and lab coat</SafetyConsiderations>
+      <Equipment>Erlenmeyer flask, cooling bath, magnetic stirrer</Equipment>
+      <CrystalSize>100 µm</CrystalSize>
+      <CrystalShape>Needles</CrystalShape>
+      <CrystalPurity>98%</CrystalPurity>
+      <Yield>85%</Yield>
+      <NucleationInductionTime>10 minutes</NucleationInductionTime>
+      <GrowthRate>5 µm/min</GrowthRate>
+      <Solubility>10 g/L</Solubility>
+      <CoolingProfile>Ramp down from 40°C to 30°C</CoolingProfile>
+      <Additives>None</Additives>
+      <pH>7.0</pH>
+      <SeedCrystalSize>50 µm</SeedCrystalSize>
+    </Parameters>
+  </Crystallization>
+</UnitOperation>
