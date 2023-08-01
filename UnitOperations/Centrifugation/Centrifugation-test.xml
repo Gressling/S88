@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Centrifugation>
+    <Parameters>
+      <Sample>Cell Culture</Sample>
+      <Speed>3000 RPM</Speed>
+      <Time>10 minutes</Time>
+      <Temperature>25°C</Temperature>
+      <Pressure>1 atm</Pressure>
+      <RotationDirection>Clockwise</RotationDirection>
+      <SafetyConsiderations>Wear protective goggles and lab coat</SafetyConsiderations>
+      <Equipment>High-Speed Centrifuge</Equipment>
+    </Parameters>
+  </Centrifugation>
+</UnitOperation>

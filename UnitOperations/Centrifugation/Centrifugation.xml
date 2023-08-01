@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Centrifugation>
+    <Parameters>
+      <Sample>...</Sample>
+      <Speed>...</Speed>
+      <Time>...</Time>
+      <Temperature>...</Temperature>
+      <Pressure>...</Pressure>
+      <RotationDirection>...</RotationDirection>
+      <SafetyConsiderations>...</SafetyConsiderations>
+      <Equipment>...</Equipment>
+    </Parameters>
+  </Centrifugation>
+</UnitOperation>
