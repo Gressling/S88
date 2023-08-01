@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Absorption">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Parameters">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="GasStream" type="xs:string"/>
+                    <xs:element name="LiquidPhase" type="xs:string"/>
+                    <xs:element name="Solvent" type="xs:string"/>
+                    <xs:element name="Temperature" type="xs:string"/>
+                    <xs:element name="Pressure" type="xs:string"/>
+                    <xs:element name="Stirring" type="xs:string"/>
+                    <xs:element name="PH" type="xs:string"/>
+                    <xs:element name="MassTransferCoefficient" type="xs:string"/>
+                    <xs:element name="ContactTime" type="xs:string"/>
+                    <xs:element name="SafetyConsiderations" type="xs:string"/>
+                    <xs:element name="ReactionEnvironment" type="xs:string"/>
+                    <xs:element name="Equipment" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

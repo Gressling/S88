@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Absorption>
+    <Parameters> 
+      <GasStream>...</GasStream> <!-- The gas stream to be absorbed -->
+      <LiquidPhase>...</LiquidPhase> <!-- The liquid or solid phase that absorbs the gas -->
+      <Solvent>...</Solvent> <!-- The solvent used in the absorption process -->
+      <Temperature>...</Temperature> <!-- The temperature of the absorption process -->
+      <Pressure>...</Pressure> <!-- The pressure of the absorption process -->
+      <Stirring>...</Stirring> <!-- Indicates whether stirring or agitation is used -->
+      <PH>...</PH> <!-- The pH level of the liquid phase -->
+      <MassTransferCoefficient>...</MassTransferCoefficient> <!-- The mass transfer coefficient -->
+      <ContactTime>...</ContactTime> <!-- The duration of contact between gas and liquid phases -->
+      <SafetyConsiderations>...</SafetyConsiderations> <!-- Safety considerations for the process -->
+      <ReactionEnvironment>...</ReactionEnvironment> <!-- Environmental conditions during absorption -->
+      <Equipment>...</Equipment> <!-- The equipment used in the absorption process -->
+    </Parameters>
+  </Absorption>
+</UnitOperation>

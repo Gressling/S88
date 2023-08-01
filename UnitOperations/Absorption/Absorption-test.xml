@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Absorption>
+    <Parameters>
+      <GasStream>Nitrogen and Oxygen</GasStream>
+      <LiquidPhase>Water</LiquidPhase>
+      <Solvent>NaOH solution</Solvent>
+      <Temperature>25°C</Temperature>
+      <Pressure>1 atm</Pressure>
+      <Stirring>Agitation at 500 rpm</Stirring>
+      <PH>8.0</PH>
+      <MassTransferCoefficient>0.05 mol/(m^2 s)</MassTransferCoefficient>
+      <ContactTime>10 minutes</ContactTime>
+      <SafetyConsiderations>Wear appropriate protective gear</SafetyConsiderations>
+      <ReactionEnvironment>Controlled environment</ReactionEnvironment>
+      <Equipment>Glass column</Equipment>
+    </Parameters>
+  </Absorption>
+</UnitOperation>
