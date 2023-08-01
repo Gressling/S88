@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Dry>
+    <Parameters>
+      <Product>...</Product>
+      <DryingMethod>...</DryingMethod>
+      <DryingTemperature>...</DryingTemperature>
+      <DryingTime>...</DryingTime>
+      <Humidity>...</Humidity>
+      <ParticleSize>...</ParticleSize>
+      <Quantity>...</Quantity>
+      <DryingContainer>...r</DryingContainer>
+      <ShelfConfiguration>...</ShelfConfiguration>
+      <AirflowRate>...</AirflowRate>
+      <SafetyConsiderations>...</SafetyConsiderations>
+      <Equipment>...</Equipment>
+      <QualityControlChecks>...</QualityControlChecks>
+    </Parameters>
+  </Dry>
+</UnitOperation>

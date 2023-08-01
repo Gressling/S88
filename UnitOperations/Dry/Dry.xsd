@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Dry">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Parameters">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Product" type="xs:string"/>
+                    <xs:element name="DryingMethod" type="xs:string"/>
+                    <xs:element name="DryingTemperature" type="xs:string"/>
+                    <xs:element name="DryingTime" type="xs:string"/>
+                    <xs:element name="Humidity" type="xs:string"/>
+                    <xs:element name="ParticleSize" type="xs:string"/>
+                    <xs:element name="Quantity" type="xs:string"/>
+                    <xs:element name="DryingContainer" type="xs:string"/>
+                    <xs:element name="ShelfConfiguration" type="xs:string"/>
+                    <xs:element name="AirflowRate" type="xs:string"/>
+                    <xs:element name="SafetyConsiderations" type="xs:string"/>
+                    <xs:element name="Equipment" type="xs:string"/>
+                    <xs:element name="QualityControlChecks" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

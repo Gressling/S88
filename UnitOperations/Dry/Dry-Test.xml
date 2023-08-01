@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Dry>
+    <Parameters>
+      <Product>Tablet</Product>
+      <DryingMethod>Hot Air Drying</DryingMethod>
+      <DryingTemperature>60°C</DryingTemperature>
+      <DryingTime>4 hours</DryingTime>
+      <Humidity>Not specified</Humidity>
+      <ParticleSize>Not specified</ParticleSize>
+      <Quantity>1000 units</Quantity>
+      <DryingContainer>Tray Dryer</DryingContainer>
+      <ShelfConfiguration>Single-layer</ShelfConfiguration>
+      <AirflowRate>10 m^3/h</AirflowRate>
+      <SafetyConsiderations>Wear safety goggles and lab coat</SafetyConsiderations>
+      <Equipment>Tray Dryer, Temperature controller</Equipment>
+      <QualityControlChecks>Uniformity of drying, Moisture content test</QualityControlChecks>
+    </Parameters>
+  </Dry>
+</UnitOperation>
