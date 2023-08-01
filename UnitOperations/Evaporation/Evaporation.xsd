@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Evaporation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Parameters">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Product" type="xs:string"/>
+                    <xs:element name="EvaporationMethod" type="xs:string"/>
+                    <xs:element name="EvaporationTemperature" type="xs:string"/>
+                    <xs:element name="EvaporationTime" type="xs:string"/>
+                    <xs:element name="Solvent" type="xs:string"/>
+                    <xs:element name="Concentration" type="xs:string"/>
+                    <xs:element name="HeatingSource" type="xs:string"/>
+                    <xs:element name="SafetyConsiderations" type="xs:string"/>
+                    <xs:element name="Equipment" type="xs:string"/>
+                    <xs:element name="QualityControlChecks" type="xs:string"/>
+                    <xs:element name="AdditionalNotes" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

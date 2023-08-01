@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Evaporation>
+    <Parameters>
+      <Product>...</Product>
+      <EvaporationMethod>...</EvaporationMethod>
+      <EvaporationTemperature>...</EvaporationTemperature>
+      <EvaporationTime>...</EvaporationTime>
+      <Solvent>...</Solvent>
+      <Concentration>...</Concentration>
+      <HeatingSource>...</HeatingSource>
+      <SafetyConsiderations>...</SafetyConsiderations>
+      <Equipment>...</Equipment>
+      <QualityControlChecks>...</QualityControlChecks>
+      <AdditionalNotes>...</AdditionalNotes>
+    </Parameters>
+  </Evaporation>
+</UnitOperation>
