@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Crystallization>
+    <Parameters>
+      <Compound>...</Compound>
+      <Solvent>...</Solvent>
+      <Temperature>...</Temperature>
+      <CoolingRate>...</CoolingRate>
+      <StirringSpeed>...</StirringSpeed>
+      <CrystallizationTime>...</CrystallizationTime>
+      <SeedCrystal>...</SeedCrystal>
+      <SafetyConsiderations>...</SafetyConsiderations>
+      <Equipment>...</Equipment>
+      <CrystalSize>...</CrystalSize>
+      <CrystalShape>...</CrystalShape>
+      <CrystalPurity>...</CrystalPurity>
+      <Yield>...</Yield>
+      <NucleationInductionTime>...</NucleationInductionTime>
+      <GrowthRate>...</GrowthRate>
+      <Solubility>...</Solubility>
+      <CoolingProfile>...</CoolingProfile>
+      <Additives>...</Additives>
+      <pH>...</pH>
+      <SeedCrystalSize>...</SeedCrystalSize>
+    </Parameters>
+  </Crystallization>
+</UnitOperation>
