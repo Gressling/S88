@@ -1,47 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-  <xs:element name = "UnitOperation">
+  <xs:element name="UnitOperation">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name = "Reduction">
-          <xs:complexType>
-            <xs:sequence>
-                <xs:element name="Parameters">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="ReactionConditions">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="Temperature" type="xs:string"/>
-                                        <xs:element name="Pressure" type="xs:string"/>
-                                        <xs:element name="PH" type="xs:string"/>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    <xs:complexType>
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="StirringSpeed" type="xs:string"/>
-                            <xs:element name="StirringTime" type="xs:string"/>
-                            <xs:element name="StirringDirection" type="xs:string"/>
-                            <xs:element name="StirrerDesign" type="xs:string"/>
-                            <xs:element name="StirrerSizeAndShape" type="xs:string"/>
-                            <xs:element name="ContainerGeometry" type="xs:strings"/>
-                            <xs:element name="Viscosity" type="xs:string"/>
-                            <xs:element name="Temperature" type="xs:string"/>
-                            <xs:element name="ShearRate" type="xs:string"/>
-                            <xs:element name="AdditionalAgitationMechanisms" type="xs:string"/>
-                            <xs:element name="SafetyMeasures" type="xs:string"/>
-                            <xs:element name="StirringRateProfiles" type="xs:string"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
+        <xs:element name="Reduction" type="ReductionType"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+  <xs:complexType name="ReductionType">
+    <xs:sequence>
+      <xs:element name="Parameters" type="ParametersType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="ReactionConditions" type="ReactionConditionsType"/>
+      <xs:element name="Reductant" type="xs:string"/>
+      <xs:element name="Catalyst" type="xs:string" minOccurs="0"/>
+      <xs:element name="ReactionTime" type="xs:string"/>
+      <xs:element name="MolarRatio" type="xs:string"/>
+      <xs:element name="Solvent" type="xs:string" minOccurs="0"/>
+      <xs:element name="Agitation" type="xs:string"/>
+      <xs:element name="ReactionVessel" type="xs:string"/>
+      <xs:element name="InertAtmosphere" type="xs:string"/>
+      <xs:element name="SafetyMeasures" type="xs:string"/>
+      <xs:element name="MonitoringAndControl" type="xs:string"/>
+      <xs:element name="PostReactionTreatment" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ReactionConditionsType">
+    <xs:sequence>
+      <xs:element name="Temperature" type="xs:string"/>
+      <xs:element name="Pressure" type="xs:string"/>
+      <xs:element name="pH" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
 </xs:schema>
+
