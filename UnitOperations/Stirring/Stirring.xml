@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperations>
+  <Stirring>
+    <Parameters>
+      <StirringSpeed>RPM</StirringSpeed>
+      <StirringTime>minutes</StirringTime>
+      <StirringDirection>Clockwise/Counterclockwise</StirringDirection>
+      <StirrerDesign>Paddle/Propeller/Turbine/Anchor/MagneticStirBar</StirrerDesign>
+      <StirrerSizeAndShape>Dimensions (e.g., diameter, length)</StirrerSizeAndShape>
+      <ContainerGeometry>Shape and size of the vessel</ContainerGeometry>
+      <Viscosity>Centipoise (cP) or Pascal-second (Pa·s)</Viscosity>
+      <Temperature>Degrees Celsius (°C)</Temperature>
+      <ShearRate>1/s (reciprocal seconds)</ShearRate>
+      <AdditionalAgitationMechanisms>Ultrasonication/MechanicalShaking/GasSparging</AdditionalAgitationMechanisms>
+      <SafetyMeasures>Safety shields, monitoring systems, emergency stop features</SafetyMeasures>
+      <StirringRateProfiles>Customized stirring rate profiles</StirringRateProfiles>
+    </Parameters>
+  </Stirring>
+</UnitOperations>
