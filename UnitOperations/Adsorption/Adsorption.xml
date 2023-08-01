@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Adsorption>
+    <Parameters>
+      <Adsorbent>...</Adsorbent>
+      <Adsorbate>...</Adsorbate>
+      <Temperature>...</Temperature>
+      <Pressure>...</Pressure>
+      <ContactTime>...</ContactTime>
+      <Stirring>...</Stirring>
+      <SafetyConsiderations>...</SafetyConsiderations>
+      <Equipment>...</Equipment>
+    </Parameters>
+  </Adsorption>
+</UnitOperation>
