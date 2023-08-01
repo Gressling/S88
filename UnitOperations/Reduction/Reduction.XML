@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Reduction>
+    <Parameters>
+      <ReactionConditions>
+        <Temperature>°C</Temperature>
+        <Pressure>atm</Pressure>
+        <pH>unitless</pH>
+      </ReactionConditions>
+      <Reductant>Chemical Name</Reductant>
+      <Catalyst>Chemical Name (if applicable)</Catalyst>
+      <ReactionTime>minutes or hours</ReactionTime>
+      <MolarRatio>stoichiometric ratio</MolarRatio>
+      <Solvent>Chemical Name (if applicable)</Solvent>
+      <Agitation>Yes/No</Agitation>
+      <ReactionVessel>Type and Size</ReactionVessel>
+      <InertAtmosphere>Yes/No</InertAtmosphere>
+      <SafetyMeasures>Precautions taken</SafetyMeasures>
+      <MonitoringAndControl>Methods used</MonitoringAndControl>
+      <PostReactionTreatment>Steps involved</PostReactionTreatment>
+    </Parameters>
+  </Reduction>
+</UnitOperation>
