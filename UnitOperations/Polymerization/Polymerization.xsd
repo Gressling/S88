@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Polymerization" type="PolymerizationType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="PolymerizationType">
+    <xs:sequence>
+      <xs:element name="Parameters" type="ParametersType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="ReactionType" type="xs:string"/>
+      <xs:element name="Monomers" type="MonomersType"/>
+      <xs:element name="Initiator" type="xs:string"/>
+      <xs:element name="Catalyst" type="xs:string" minOccurs="0"/>
+      <xs:element name="ReactionTemperature" type="xs:string"/>
+      <xs:element name="ReactionTime" type="xs:string"/>
+      <xs:element name="ReactionPressure" type="xs:string"/>
+      <xs:element name="Solvent" type="xs:string" minOccurs="0"/>
+      <xs:element name="Stirring" type="xs:string"/>
+      <xs:element name="InertAtmosphere" type="xs:string"/>
+      <xs:element name="SafetyMeasures" type="xs:string"/>
+      <xs:element name="PolymerizationDegree" type="xs:string"/>
+      <xs:element name="PolymerizationRateProfile" type="xs:string" minOccurs="0"/>
+      <xs:element name="PostPolymerizationTreatment" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MonomersType">
+    <xs:sequence>
+      <xs:element name="Monomer" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="MolarRatio" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
