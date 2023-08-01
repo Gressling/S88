@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Distillation>
+    <Parameters>
+      <Mixture>Alcohol-Water</Mixture>
+      <Temperature>78.3°C</Temperature>
+      <Pressure>1 atm</Pressure>
+      <HeatingRate>2°C/min</HeatingRate>
+      <CoolingRate>1°C/min</CoolingRate>
+      <DistillateCollectors>2</DistillateCollectors>
+      <RefluxRatio>1:3</RefluxRatio>
+      <SolventSelection>Acetone</SolventSelection>
+      <ResidueLimit>0.1%</ResidueLimit>
+      <DistillationEfficiency>95%</DistillationEfficiency>
+      <RecoveryRate>90%</RecoveryRate>
+      <QualityControlChecks>Purity test, HPLC analysis</QualityControlChecks>
+      <RegulatoryCompliance>Pharmacopeial standards</RegulatoryCompliance>
+      <Recordkeeping>Batch number, date, operator name</Recordkeeping>
+      <ValidationParameters>Process validation report</ValidationParameters>
+      <SolventRecycling>Implemented, 80% efficiency</SolventRecycling>
+      <SafetyConsiderations>Wear safety goggles and lab coat</SafetyConsiderations>
+      <Equipment>Distillation apparatus, condenser, heating mantle</Equipment>
+    </Parameters>
+  </Distillation>
+</UnitOperation>
