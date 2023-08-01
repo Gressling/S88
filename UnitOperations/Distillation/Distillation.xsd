@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Distillation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Parameters">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Mixture" type="xs:string"/>
+                    <xs:element name="Temperature" type="xs:string"/>
+                    <xs:element name="Pressure" type="xs:string"/>
+                    <xs:element name="HeatingRate" type="xs:string"/>
+                    <xs:element name="CoolingRate" type="xs:string"/>
+                    <xs:element name="DistillateCollectors" type="xs:string"/>
+                    <xs:element name="RefluxRatio" type="xs:string"/>
+                    <xs:element name="SolventSelection" type="xs:string"/>
+                    <xs:element name="ResidueLimit" type="xs:string"/>
+                    <xs:element name="DistillationEfficiency" type="xs:string"/>
+                    <xs:element name="RecoveryRate" type="xs:string"/>
+                    <xs:element name="QualityControlChecks" type="xs:string"/>
+                    <xs:element name="RegulatoryCompliance" type="xs:string"/>
+                    <xs:element name="Recordkeeping" type="xs:string"/>
+                    <xs:element name="ValidationParameters" type="xs:string"/>
+                    <xs:element name="SolventRecycling" type="xs:string"/>
+                    <xs:element name="SafetyConsiderations" type="xs:string"/>
+                    <xs:element name="Equipment" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

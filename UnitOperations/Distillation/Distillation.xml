@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Distillation>
+    <Parameters>
+      <Mixture>...</Mixture>
+      <Temperature>...</Temperature>
+      <Pressure>...</Pressure>
+      <HeatingRate>...</HeatingRate>
+      <CoolingRate>...</CoolingRate>
+      <DistillateCollectors>...</DistillateCollectors>
+      <RefluxRatio>...</RefluxRatio>
+      <SolventSelection>...</SolventSelection>
+      <ResidueLimit>...</ResidueLimit>
+      <DistillationEfficiency>...</DistillationEfficiency>
+      <RecoveryRate>...</RecoveryRate>
+      <QualityControlChecks>...</QualityControlChecks>
+      <RegulatoryCompliance>...</RegulatoryCompliance>
+      <Recordkeeping>...</Recordkeeping>
+      <ValidationParameters>...</ValidationParameters>
+      <SolventRecycling>...</SolventRecycling>
+      <SafetyConsiderations>...</SafetyConsiderations>
+      <Equipment>...</Equipment>
+    </Parameters>
+  </Distillation>
+</UnitOperation>
