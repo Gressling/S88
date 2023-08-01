@@ -2,17 +2,17 @@
 <UnitOperation>
   <Evaporation>
     <Parameters>
-      <Product>...</Product>
-      <EvaporationMethod>...</EvaporationMethod>
-      <EvaporationTemperature>...</EvaporationTemperature>
-      <EvaporationTime>...</EvaporationTime>
-      <Solvent>...</Solvent>
-      <Concentration>...</Concentration>
-      <HeatingSource>...</HeatingSource>
-      <SafetyConsiderations>...</SafetyConsiderations>
-      <Equipment>...</Equipment>
-      <QualityControlChecks>...</QualityControlChecks>
-      <AdditionalNotes>...</AdditionalNotes>
+      <Product>Herbal Extract</Product>
+      <EvaporationMethod>Vacuum Evaporation</EvaporationMethod>
+      <EvaporationTemperature>40°C</EvaporationTemperature>
+      <EvaporationTime>2 hours</EvaporationTime>
+      <Solvent>Water</Solvent>
+      <Concentration>25%</Concentration>
+      <HeatingSource>Steam</HeatingSource>
+      <SafetyConsiderations>Wear protective gloves and lab coat</SafetyConsiderations>
+      <Equipment>Rotary Evaporator, Vacuum Pump</Equipment>
+      <QualityControlChecks>Concentration, Purity</QualityControlChecks>
+      <AdditionalNotes>Stir occasionally during evaporation.</AdditionalNotes>
     </Parameters>
   </Evaporation>
 </UnitOperation>
