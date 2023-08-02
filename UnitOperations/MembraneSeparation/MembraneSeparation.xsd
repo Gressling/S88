@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="MembraneSeparation" type="MembraneSeparationType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="MembraneSeparationType">
+    <xs:sequence>
+      <xs:element name="Parameters" type="ParametersType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="MembraneType" type="xs:string"/>
+      <xs:element name="MembraneMaterial" type="xs:string"/>
+      <xs:element name="FeedSolution" type="xs:string"/>
+      <xs:element name="OperatingPressure" type="xs:string"/>
+      <xs:element name="FeedFlowRate" type="xs:string"/>
+      <xs:element name="PermeateFlowRate" type="xs:string"/>
+      <xs:element name="Temperature" type="xs:string"/>
+      <xs:element name="RetentionOrRejection" type="xs:string"/>
+      <xs:element name="MembraneSurfaceArea" type="xs:string"/>
+      <xs:element name="MembraneConfiguration" type="xs:string"/>
+      <xs:element name="CrossflowFiltration" type="xs:string"/>
+      <xs:element name="CleaningAndMaintenance" type="xs:string"/>
+      <xs:element name="ConcentrationPolarization" type="xs:string"/>
+      <xs:element name="SafetyMeasures" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

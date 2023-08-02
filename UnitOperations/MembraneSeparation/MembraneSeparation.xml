@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <MembraneSeparation>
+    <Parameters>
+      <MembraneType>Membrane Type (e.g., RO, NF, UF, MF)</MembraneType>
+      <MembraneMaterial>Membrane Material (e.g., Polymeric, Ceramic, Metallic)</MembraneMaterial>
+      <FeedSolution>Composition and Concentration of Feed Solution</FeedSolution>
+      <OperatingPressure>Pressure units (e.g., bar or psi)</OperatingPressure>
+      <FeedFlowRate>Flow rate units (e.g., L/min or m3/h)</FeedFlowRate>
+      <PermeateFlowRate>Flow rate units (e.g., L/min or m3/h)</PermeateFlowRate>
+      <Temperature>°C</Temperature>
+      <RetentionOrRejection>Retention/Rejection Percentage</RetentionOrRejection>
+      <MembraneSurfaceArea>Surface Area units (e.g., m2 or cm2)</MembraneSurfaceArea>
+      <MembraneConfiguration>Spiral-wound/Flat-sheet/Hollow-fiber</MembraneConfiguration>
+      <CrossflowFiltration>Yes/No</CrossflowFiltration>
+      <CleaningAndMaintenance>Procedures for cleaning and maintenance</CleaningAndMaintenance>
+      <ConcentrationPolarization>Details about concentration polarization</ConcentrationPolarization>
+      <SafetyMeasures>Precautions taken during operation</SafetyMeasures>
+    </Parameters>
+  </MembraneSeparation>
+</UnitOperation>
