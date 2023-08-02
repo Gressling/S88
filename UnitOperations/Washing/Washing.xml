@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Washing>
+    <Parameters>
+      <MaterialToBeWashed>Name or Description of Material to be Washed</MaterialToBeWashed>
+      <Impurities>Types and Nature of Impurities to be Removed</Impurities>
+      <WashingSolventOrMedium>Type of Washing Solvent or Medium</WashingSolventOrMedium>
+      <WashingTemperature>Temperature value (°C)</WashingTemperature>
+      <WashingTime>Duration of Washing (minutes or hours)</WashingTime>
+      <AgitationOrMixing>Level of Agitation or Mixing</AgitationOrMixing>
+      <NumberOfWashingSteps>Number of Washing Steps</NumberOfWashingSteps>
+      <WashingVolumeOrRatio>Volume of Washing Solvent or Medium (e.g., mL or L)</WashingVolumeOrRatio>
+      <FiltrationOrSeparation>Method of Filtration or Separation</FiltrationOrSeparation>
+      <Drying>Method of Drying the Washed Material</Drying>
+      <SafetyMeasures>Safety Precautions during Washing</SafetyMeasures>
+      <ProductQualityControl>Quality Control Parameters or Tests</ProductQualityControl>
+      <WasteTreatment>Waste Treatment for Washing Solvent/Medium</WasteTreatment>
+    </Parameters>
+  </Washing>
+</UnitOperation>

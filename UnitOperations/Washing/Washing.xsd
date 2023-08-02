@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Washing" type="WashingType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="WashingType">
+    <xs:sequence>
+      <xs:element name="Parameters" type="ParametersType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="MaterialToBeWashed" type="xs:string"/>
+      <xs:element name="Impurities" type="xs:string"/>
+      <xs:element name="WashingSolventOrMedium" type="xs:string"/>
+      <xs:element name="WashingTemperature" type="xs:string"/>
+      <xs:element name="WashingTime" type="xs:string"/>
+      <xs:element name="AgitationOrMixing" type="xs:string"/>
+      <xs:element name="NumberOfWashingSteps" type="xs:string"/>
+      <xs:element name="WashingVolumeOrRatio" type="xs:string"/>
+      <xs:element name="FiltrationOrSeparation" type="xs:string"/>
+      <xs:element name="Drying" type="xs:string"/>
+      <xs:element name="SafetyMeasures" type="xs:string"/>
+      <xs:element name="ProductQualityControl" type="xs:string"/>
+      <xs:element name="WasteTreatment" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
