@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Mixing" type="MixingType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="MixingType">
+    <xs:sequence>
+      <xs:element name="Parameters" type="ParametersType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="Ingredients" type="IngredientsType"/>
+      <xs:element name="MixingMethod" type="xs:string"/>
+      <xs:element name="MixingTime" type="xs:string"/>
+      <xs:element name="MixingTemperature" type="xs:string"/>
+      <xs:element name="MixingSpeed" type="xs:string"/>
+      <xs:element name="MixingContainer" type="xs:string"/>
+      <xs:element name="InertAtmosphere" type="xs:string"/>
+      <xs:element name="SafetyMeasures" type="xs:string"/>
+      <xs:element name="PostMixingTreatment" type="xs:string"/>
+      <xs:element name="HomogeneityTesting" type="xs:string"/>
+      <xs:element name="ValidationParameters" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="IngredientsType">
+    <xs:sequence>
+      <xs:element name="Ingredient" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Quantity" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
