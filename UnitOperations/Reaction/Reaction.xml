@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Reaction>
+    <Parameters>
+      <Reactants>Names or Chemical Formulas of Reactants</Reactants>
+      <Stoichiometry>Stoichiometry and Balanced Chemical Equation</Stoichiometry>
+      <ReactionTemperature>Temperature value (°C)</ReactionTemperature>
+      <ReactionTime>Duration of Reaction (hours or days)</ReactionTime>
+      <Catalysts>List of Catalysts or Enzymes (if any)</Catalysts>
+      <Solvent>Type of Solvent Used</Solvent>
+      <ReactionPressure>Pressure value (optional, if applicable)</ReactionPressure>
+      <pH>pH value (optional, if applicable)</pH>
+      <MixingOrAgitation>Level of Mixing or Agitation</MixingOrAgitation>
+      <SafetyMeasures>Precautions during Reaction</SafetyMeasures>
+      <YieldAndProductivity>Desired Yield and Productivity</YieldAndProductivity>
+      <ProductIsolationAndPurification>Methods of Isolation and Purification</ProductIsolationAndPurification>
+      <ReactionMonitoring>Techniques for Monitoring the Reaction</ReactionMonitoring>
+      <ReactionConditions>Any Other Specific Conditions or Parameters</ReactionConditions>
+    </Parameters>
+  </Reaction>
+</UnitOperation>
