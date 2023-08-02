@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Pulverization" type="PulverizationType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="PulverizationType">
+    <xs:sequence>
+      <xs:element name="Parameters" type="ParametersType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="FeedMaterial" type="xs:string"/>
+      <xs:element name="ParticleSizeRequirement" type="xs:string"/>
+      <xs:element name="PulverizationEquipment" type="xs:string"/>
+      <xs:element name="PulverizationTime" type="xs:string"/>
+      <xs:element name="PulverizationSpeed" type="xs:string" minOccurs="0"/>
+      <xs:element name="FeedRate" type="xs:string" minOccurs="0"/>
+      <xs:element name="TypeOfGrindingMedia" type="xs:string" minOccurs="0"/>
+      <xs:element name="CoolingOrHeating" type="xs:string" minOccurs="0"/>
+      <xs:element name="SafetyMeasures" type="xs:string"/>
+      <xs:element name="ProductQualityControl" type="xs:string" minOccurs="0"/>
+      <xs:element name="DustCollection" type="xs:string" minOccurs="0"/>
+      <xs:element name="MaterialHandling" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
