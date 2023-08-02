@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <IonExchange>
+    <Parameters>
+      <IonExchangeResinType>Cation Exchange/Anion Exchange/Mixed-Bed</IonExchangeResinType>
+      <IonExchangeCapacity>Capacity in meq/g or mmol/g</IonExchangeCapacity>
+      <FeedSolution>Composition of Feed Solution</FeedSolution>
+      <ContactTime>minutes or hours</ContactTime>
+      <Temperature>°C</Temperature>
+      <FlowRate>Flow rate units (e.g., L/min or m3/h)</FlowRate>
+      <RegenerationMethod>Method of regeneration</RegenerationMethod>
+      <RegenerationFrequency>Frequency of regeneration</RegenerationFrequency>
+      <RegenerationTime>minutes or hours</RegenerationTime>
+      <pHControl>Yes/No</pHControl>
+      <ParticleSize>Particle size units (e.g., µm)</ParticleSize>
+      <BedHeight>Bed height units (e.g., cm)</BedHeight>
+      <SafetyMeasures>Precautions taken during operation</SafetyMeasures>
+    </Parameters>
+  </IonExchange>
+</UnitOperation>

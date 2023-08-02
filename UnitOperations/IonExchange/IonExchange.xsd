@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="IonExchange" type="IonExchangeType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="IonExchangeType">
+    <xs:sequence>
+      <xs:element name="Parameters" type="ParametersType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="IonExchangeResinType" type="xs:string"/>
+      <xs:element name="IonExchangeCapacity" type="xs:string"/>
+      <xs:element name="FeedSolution" type="xs:string"/>
+      <xs:element name="ContactTime" type="xs:string"/>
+      <xs:element name="Temperature" type="xs:string"/>
+      <xs:element name="FlowRate" type="xs:string"/>
+      <xs:element name="RegenerationMethod" type="xs:string"/>
+      <xs:element name="RegenerationFrequency" type="xs:string"/>
+      <xs:element name="RegenerationTime" type="xs:string"/>
+      <xs:element name="pHControl" type="xs:string"/>
+      <xs:element name="ParticleSize" type="xs:string"/>
+      <xs:element name="BedHeight" type="xs:string"/>
+      <xs:element name="SafetyMeasures" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
