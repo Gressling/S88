@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Fermentation" type="FermentationType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="FermentationType">
+    <xs:sequence>
+      <xs:element name="Parameters" type="ParametersType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="MicroorganismStrain" type="xs:string"/>
+      <xs:element name="InoculumSize" type="xs:string"/>
+      <xs:element name="Feedstock" type="xs:string"/>
+      <xs:element name="NutrientComposition" type="xs:string"/>
+      <xs:element name="pH" type="xs:string"/>
+      <xs:element name="Temperature" type="xs:string"/>
+      <xs:element name="AerationOrOxygenation" type="xs:string"/>
+      <xs:element name="FermentationTime" type="xs:string"/>
+      <xs:element name="AgitationOrMixing" type="xs:string"/>
+      <xs:element name="FermentationVesselType" type="xs:string"/>
+      <xs:element name="FermentationControlParameters" type="xs:string"/>
+      <xs:element name="ProductRecovery" type="xs:string"/>
+      <xs:element name="YieldAndProductivity" type="xs:string"/>
+      <xs:element name="SafetyMeasures" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
