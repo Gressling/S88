@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOperation>
+  <Oxidation>
+    <Parameters>
+      <ReactionType>Combustion/Oxidation of Organic Compounds/Metal Oxidation</ReactionType>
+      <OxidizingAgent>Chemical Name (e.g., Oxygen, H2O2, Halogens)</OxidizingAgent>
+      <ReactionTemperature>°C</ReactionTemperature>
+      <ReactionTime>minutes or hours</ReactionTime>
+      <ReactionPressure>atm</ReactionPressure>
+      <Catalyst>Catalyst Name (if applicable)</Catalyst>
+      <Solvent>Chemical Name (if applicable)</Solvent>
+      <Stirring>Yes/No</Stirring>
+      <InertAtmosphere>Yes/No</InertAtmosphere>
+      <SafetyMeasures>Precautions taken</SafetyMeasures>
+      <OxidationDegree>Desired degree of oxidation</OxidationDegree>
+      <OxidationRateProfile>Customized rate profiles (if applicable)</OxidationRateProfile>
+      <PostOxidationTreatment>Steps involved</PostOxidationTreatment>
+    </Parameters>
+  </Oxidation>
+</UnitOperation>

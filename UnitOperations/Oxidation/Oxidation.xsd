@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Oxidation" type="OxidationType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="OxidationType">
+    <xs:sequence>
+      <xs:element name="Parameters" type="ParametersType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="ReactionType" type="xs:string"/>
+      <xs:element name="OxidizingAgent" type="xs:string"/>
+      <xs:element name="ReactionTemperature" type="xs:string"/>
+      <xs:element name="ReactionTime" type="xs:string"/>
+      <xs:element name="ReactionPressure" type="xs:string"/>
+      <xs:element name="Catalyst" type="xs:string" minOccurs="0"/>
+      <xs:element name="Solvent" type="xs:string" minOccurs="0"/>
+      <xs:element name="Stirring" type="xs:string"/>
+      <xs:element name="InertAtmosphere" type="xs:string"/>
+      <xs:element name="SafetyMeasures" type="xs:string"/>
+      <xs:element name="OxidationDegree" type="xs:string"/>
+      <xs:element name="OxidationRateProfile" type="xs:string" minOccurs="0"/>
+      <xs:element name="PostOxidationTreatment" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
