@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- 
+    Theoretically this should function for all Sequences; this checks for the root tag "Sequences", the children tags "UnitOperation", "Loop", and "Break" while ignoring the name of the Unit Operation and its Parameters. Peter D's python code should then process and verify the Unit Operations and Parameters. If notes are confusing check 3UnitOperations.xml structure and/or ask Aaron A. 
+-->
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Sequences">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Choice of which comes next. All can occur unlimitied times. Must have at least one unit operation; Loop and Break are optional. -->
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="UnitOperation" minOccurs="1"/>
+          <xs:element name="Loop" type="LoopType" minOccurs="0"/>
+          <xs:element name="Break" type="BreakType" minOccurs="0"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="UnitOperationType">
+    <xs:sequence>
+        <!-- skipping = ignoring everything that comes after -->
+      <xs:any minOccurs="1" maxOccurs="unbounded" processContents="skip"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LoopType">
+    <xs:sequence>
+        <!-- One and only one Iteration amount per loop. At least one break condition (more possible) per loop.  -->
+      <xs:element name="Iterations" type="xs:int" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="BreakCondition" type="BreakConditionType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="BreakConditionType">
+    <xs:sequence>
+        <!-- One and only one Condition (explanation of the Condition) per BreakCondition. -->
+      <xs:element name="Condition" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="BreakType">
+    <xs:sequence>
+        <!-- one and only one Target Step per Break -->
+      <xs:element name="TargetStep" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
