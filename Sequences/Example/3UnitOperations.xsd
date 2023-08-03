@@ -14,11 +14,11 @@
     </xs:complexType>
   </xs:element>
 
-  <xs:complexType name="UnitOperationType">
+  <!-- <xs:complexType name="UnitOperationType">
     <xs:sequence>
       <xs:element name="Parameters" type="xs:string" minOccurs="0"/>
     </xs:sequence>
-  </xs:complexType>
+  </xs:complexType> -->
 
   <xs:complexType name="LoopType">
     <xs:sequence>
