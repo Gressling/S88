@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Sequences>
+    <UnitOperation>
+        <Reaction>
+            <Parameters>
+              <Reactants>Names or Chemical Formulas of Reactants</Reactants>
+              <Stoichiometry>Stoichiometry and Balanced Chemical Equation</Stoichiometry>
+              <ReactionTemperature>Temperature value (°C)</ReactionTemperature>
+              <ReactionTime>Duration of Reaction (hours or days)</ReactionTime>
+              <Catalysts>List of Catalysts or Enzymes (if any)</Catalysts>
+              <Solvent>Type of Solvent Used</Solvent>
+              <ReactionPressure>Pressure value (optional, if applicable)</ReactionPressure>
+              <pH>pH value (optional, if applicable)</pH>
+              <MixingOrAgitation>Level of Mixing or Agitation</MixingOrAgitation>
+              <SafetyMeasures>Precautions during Reaction</SafetyMeasures>
+              <YieldAndProductivity>Desired Yield and Productivity</YieldAndProductivity>
+              <ProductIsolationAndPurification>Methods of Isolation and Purification</ProductIsolationAndPurification>
+              <ReactionMonitoring>Techniques for Monitoring the Reaction</ReactionMonitoring>
+              <ReactionConditions>Any Other Specific Conditions or Parameters</ReactionConditions>
+            </Parameters>
+          </Reaction>
+    </UnitOperation>
+
+    <UnitOperation>
+        <AddOnce>
+            <Parameters> 
+              <Reactant>...</Reactant>
+              <Amount>...</Amount>
+              <Timing>...</Timing>
+              <RateOfAddition>...</RateOfAddition>
+              <Temperature>...</Temperature>
+              <Pressure>...</Pressure>
+              <Stirring>...</Stirring>
+              <Solvent>...</Solvent>
+              <PH>...</PH>
+              <SafetyConsiderations>...</SafetyConsiderations>
+              <ReactionEnvironment>...</ReactionEnvironment>
+              <Equipment>...</Equipment>
+            </Parameters>
+        </AddOnce>
+    </UnitOperation>
+
+    <Loop>
+        <Iterations>minimum 4</Iterations>
+        <BreakCondition>
+            <!-- When loop stops-->
+            <Condition>Until all reactants have reacted with each other</Condition>
+        </BreakCondition>
+    </Loop>
+
+    <Break>
+        <!-- Break out of loop and jump to next step-->
+        <TargetStep>Dry</TargetStep>
+    </Break>
+
+    <UnitOperation>
+            <Dry>
+                <Parameters>
+                  <Product>...</Product>
+                  <DryingMethod>...</DryingMethod>
+                  <DryingTemperature>...</DryingTemperature>
+                  <DryingTime>...</DryingTime>
+                  <Humidity>...</Humidity>
+                  <ParticleSize>...</ParticleSize>
+                  <Quantity>...</Quantity>
+                  <DryingContainer>...</DryingContainer>
+                  <ShelfConfiguration>...</ShelfConfiguration>
+                  <AirflowRate>...</AirflowRate>
+                  <SafetyConsiderations>...</SafetyConsiderations>
+                  <Equipment>...</Equipment>
+                  <QualityControlChecks>...</QualityControlChecks>
+                </Parameters>
+              </Dry>
+    </UnitOperation>
+</Sequences>
