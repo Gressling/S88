@@ -6,7 +6,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:choice maxOccurs="unbounded">
-          <xs:element name="UnitOperation" type="UnitOperationType"/>
+          <xs:element name="UnitOperation"/>
           <xs:element name="Loop" type="LoopType"/>
           <xs:element name="Break" type="BreakType"/>
         </xs:choice>
