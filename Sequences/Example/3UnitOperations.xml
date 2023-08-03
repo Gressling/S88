@@ -42,7 +42,7 @@
     </UnitOperation>
 
     <Loop>
-        <Iterations>minimum 4</Iterations>
+        <Iterations>4</Iterations>
         <BreakCondition>
             <!-- When loop stops-->
             <Condition>Until all reactants have reacted with each other</Condition>
