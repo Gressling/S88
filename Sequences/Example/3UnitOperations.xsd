@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Sequences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="UnitOperation" type="UnitOperationType"/>
+          <xs:element name="Loop" type="LoopType"/>
+          <xs:element name="Break" type="BreakType"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="UnitOperationType">
+    <xs:sequence>
+      <xs:element name="Parameters" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LoopType">
+    <xs:sequence>
+      <xs:element name="Iterations" type="xs:int"/>
+      <xs:element name="BreakCondition" type="BreakConditionType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="BreakConditionType">
+    <xs:sequence>
+      <xs:element name="Condition" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="BreakType">
+    <xs:sequence>
+      <xs:element name="TargetStep" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
