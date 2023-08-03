@@ -2,7 +2,10 @@
 
 
 <!-- 
-    Theoretically this should function for all Sequences; this checks for the root tag "Sequences", the children tags "UnitOperation", "Loop", and "Break" while ignoring the name of the Unit Operation and its Parameters. Peter D's python code should then process and verify the Unit Operations and Parameters. If notes are confusing check 3UnitOperations.xml structure and/or ask Aaron A. 
+    Theoretically this should function for all Sequences; this checks for the root tag "Sequences", the children tags "UnitOperation", "Loop", and "Break" while ignoring the name of the Unit Operation and its Parameters. Peter D's python code should then process and verify the Unit Operations and Parameters. If notes are confusing check file 
+    Sequences/Example/3UnitOperations.xml and Sequences/Example/3UnitOperations.xsd for structure and/or ask Aaron A. 
+
+    This was sucessfully tested on Sequences/Example/3UnitOperations.xml . 
 -->
 
 
