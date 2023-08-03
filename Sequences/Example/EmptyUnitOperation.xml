@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Sequences>
+    <EmptyUnitOperation>
+        <Parameters> 
+
+        </Parameters>
+    </EmptyUnitOperation>
+
+    <EmptyUnitOperation>
+        <Parameters> 
+            
+        </Parameters>
+    </EmptyUnitOperation>
+
+    <Loop>
+        <Iterations>4</Iterations>
+        <BreakCondition>
+            <!-- When loop stops-->
+            <Condition>something something</Condition>
+        </BreakCondition>
+    </Loop>
+
+    <Break>
+        <!-- Break out of loop and jump to EmptyUnitOperation3-->
+        <TargetStep>EmptyUnitOperation3</TargetStep>
+    </Break>
+
+    <EmptyUnitOperation>
+        <Parameters> 
+
+        </Parameters>
+    </EmptyUnitOperation>
+</Sequences>
