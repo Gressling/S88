@@ -16,7 +16,7 @@
 
   <xs:complexType name="UnitOperationType">
     <xs:sequence>
-      <xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
+      <xs:any minOccurs="1" maxOccurs="unbounded" processContents="skip"/>
     </xs:sequence>
   </xs:complexType>
 
