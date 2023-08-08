@@ -1,3 +1,5 @@
+# Event is the basic class 
+
 The concept of "event" is multifaceted and its meaning can vary based on the context. In the realm of experiments, time, and observations, an "event" generally refers to a specific occurrence or happening that can be observed, measured, or recorded. Let's dive into this concept in the context you mentioned:
 
 1. **Experiments**:
@@ -15,7 +17,7 @@ The concept of "event" is multifaceted and its meaning can vary based on the con
     
 To summarize, in the context of experiments, time, and observations, an "event" refers to a specific, observable, and often measurable occurrence. The exact nature of that occurrence can vary widely depending on the subject matter and the context in which the term is being used.
 
-Time series are events
+## Time series are event series
 
 ~~~
 <?xml version="1.0"?>
