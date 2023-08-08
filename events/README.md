@@ -17,7 +17,7 @@ The concept of "event" is multifaceted and its meaning can vary based on the con
     
 To summarize, in the context of experiments, time, and observations, an "event" refers to a specific, observable, and often measurable occurrence. The exact nature of that occurrence can vary widely depending on the subject matter and the context in which the term is being used.
 
-## Time series are event series
+## Time series extends event to a specific type of collection
 
 ```xml
 <?xml version="1.0"?>
@@ -55,4 +55,34 @@ Here, we've:
 2. Used the `event` namespace to define attributes of a basic event, such as its `id`, `description`, and a single `timestamp`.
 
 3. Used the `ts` namespace to define a collection of time series data. Within this collection, we can have multiple series of data, and each series can have multiple data points with a timestamp and a value.
+
+## Event frame extends event with a duration
+
+Certainly. In the context of 'Event Frames', the concept emphasizes the duration of an event or observation, capturing both the start and end times. Here's how we might define an XML namespace to express this:
+
+```xml
+<?xml version="1.0"?>
+<event:root xmlns:event="http://www.example.org/event" xmlns:frame="http://www.example.org/eventframe">
+    <eventframe:basicEvent>
+        <eventframe:id>1</event:id>
+        <eventframe:description>Sample Basic Event Description</event:description>
+        <eventframe:startTimestamp>2023-08-08T12:34:56Z</frame:startTimestamp>
+        <eventframe:endTimestamp>2023-08-08T14:34:56Z</frame:endTimestamp>
+    </eventframe:basicEvent>
+</event:root>
+```
+
+Here's a breakdown of the XML:
+
+1. **Namespaces**:
+   - `event`: Represents the basic class of an event.
+   - `frame`: Represents the concept of 'Event Frames', focusing on the duration.
+
+2. **Basic Event**:
+   - Uses the `event` namespace to define basic attributes of an event like its `id`, `description`, and a single `timestamp`.
+
+3. **Eventframe**:
+   - Uses the `eventframe` namespace to express the extended concept of 'Event Frames'.
+   - Instead of just a single timestamp, an 'Event Frame' captures both the start (`startTimestamp`) and end (`endTimestamp`) of the observation, highlighting its duration.
+
 
