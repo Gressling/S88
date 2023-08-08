@@ -14,3 +14,33 @@ The concept of "event" is multifaceted and its meaning can vary based on the con
     - For observational studies, an "event" might be something like the observation of a particular type of bird in a region, the occurrence of a certain type of weather pattern, or a patient showing a specific symptom in a medical study.
     
 To summarize, in the context of experiments, time, and observations, an "event" refers to a specific, observable, and often measurable occurrence. The exact nature of that occurrence can vary widely depending on the subject matter and the context in which the term is being used.
+
+Time series are events
+
+~~~
+<?xml version="1.0"?>
+<event:root xmlns:event="http://www.example.org/event" xmlns:ts="http://www.example.org/timeseries">
+    <event:event>
+        <event:id>1</event:id>
+        <event:description>Sample Event Description</event:description>
+        <event:timestamp>2023-08-08T12:34:56Z</event:timestamp>
+        
+        <!-- Time Series Collection -->
+        <ts:timeSeriesCollection>
+            <ts:series>
+                <ts:dataPoint>
+                    <ts:timestamp>2023-08-08T12:34:56Z</ts:timestamp>
+                    <ts:value>10.5</ts:value>
+                </ts:dataPoint>
+                <ts:dataPoint>
+                    <ts:timestamp>2023-08-08T12:35:00Z</ts:timestamp>
+                    <ts:value>10.8</ts:value>
+                </ts:dataPoint>
+                <!-- ... more data points ... -->
+            </ts:series>
+            <!-- ... more series ... -->
+        </ts:timeSeriesCollection>
+    </event:event>
+</event:root>
+
+~~~
