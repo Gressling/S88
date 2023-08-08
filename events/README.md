@@ -19,7 +19,7 @@ To summarize, in the context of experiments, time, and observations, an "event" 
 
 ## Time series are event series
 
-~~~
+```xml
 <?xml version="1.0"?>
 <event:root xmlns:event="http://www.example.org/event" xmlns:ts="http://www.example.org/timeseries">
     <event:event>
@@ -44,5 +44,15 @@ To summarize, in the context of experiments, time, and observations, an "event" 
         </ts:timeSeriesCollection>
     </event:event>
 </event:root>
+```
 
-~~~
+Here, we've:
+
+1. Defined two namespaces:
+   - `event`: Represents the basic class of an event.
+   - `ts`: Represents the time series data related to an event.
+   
+2. Used the `event` namespace to define attributes of a basic event, such as its `id`, `description`, and a single `timestamp`.
+
+3. Used the `ts` namespace to define a collection of time series data. Within this collection, we can have multiple series of data, and each series can have multiple data points with a timestamp and a value.
+
