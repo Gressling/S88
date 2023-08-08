@@ -1,4 +1,5 @@
-# Event is the basic class 
+# Event 
+**Is the basic class**
 
 The concept of "event" is multifaceted and its meaning can vary based on the context. In the realm of experiments, time, and observations, an "event" generally refers to a specific occurrence or happening that can be observed, measured, or recorded. Let's dive into this concept in the context you mentioned:
 
@@ -17,7 +18,8 @@ The concept of "event" is multifaceted and its meaning can vary based on the con
     
 To summarize, in the context of experiments, time, and observations, an "event" refers to a specific, observable, and often measurable occurrence. The exact nature of that occurrence can vary widely depending on the subject matter and the context in which the term is being used.
 
-## Time series extends event to a specific type of collection
+## Time series 
+**extends event to a specific type of collection**
 
 ```xml
 <?xml version="1.0"?>
@@ -56,7 +58,8 @@ Here, we've:
 
 3. Used the `ts` namespace to define a collection of time series data. Within this collection, we can have multiple series of data, and each series can have multiple data points with a timestamp and a value.
 
-## Event frame extends event with a duration
+## Event frame 
+**extends event with a duration**
 
 Certainly. In the context of 'Event Frames', the concept emphasizes the duration of an event or observation, capturing both the start and end times. Here's how we might define an XML namespace to express this:
 
