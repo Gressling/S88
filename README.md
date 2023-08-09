@@ -1,4 +1,4 @@
-# S88/NG
+# S88-NG
 
 ![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Gressling/S88/v2-beta)
 ![GitHub contributors](https://img.shields.io/github/contributors/Gressling/S88)
