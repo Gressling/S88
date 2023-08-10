@@ -1,6 +1,9 @@
-<xsl:stylesheet version="0.2" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:output method="xml" indent="yes"/>
+
+    <!-- Template to exclude Hardware node -->
+    <xsl:template match="Hardware" />
 
     <!-- Template for Blueprint -->
     <xsl:template match="/Blueprint">
