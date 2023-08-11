@@ -1,0 +1,103 @@
+<Sequences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+    <fork>
+        <UnitOperation>
+            <AddOnce>
+              <Parameters> 
+                <Reactant>...</Reactant>
+                <Amount>...</Amount>
+                <Timing>...</Timing>
+                <RateOfAddition>...</RateOfAddition>
+                <Temperature>...</Temperature>
+                <Pressure>...</Pressure>
+                <Stirring>...</Stirring>
+                <Solvent>...</Solvent>
+                <PH>...</PH>
+                <SafetyConsiderations>...</SafetyConsiderations>
+                <ReactionEnvironment>...</ReactionEnvironment>
+                <Equipment>...</Equipment>
+              </Parameters>
+            </AddOnce>
+          </UnitOperation>
+      <if>
+        <condition>SomeCondition</condition>
+        <then>
+          <Loop>
+            <while-loop>
+              <break-condition>
+                <Condition>BreakCondition</Condition>
+              </break-condition>
+              <body>
+                <UnitOperation>
+                    <Dry>
+                      <Parameters>
+                        <Product>...</Product>
+                        <DryingMethod>...</DryingMethod>
+                        <DryingTemperature>...</DryingTemperature>
+                        <DryingTime>...</DryingTime>
+                        <Humidity>...</Humidity>
+                        <ParticleSize>...</ParticleSize>
+                        <Quantity>...</Quantity>
+                        <DryingContainer>...r</DryingContainer>
+                        <ShelfConfiguration>...</ShelfConfiguration>
+                        <AirflowRate>...</AirflowRate>
+                        <SafetyConsiderations>...</SafetyConsiderations>
+                        <Equipment>...</Equipment>
+                        <QualityControlChecks>...</QualityControlChecks>
+                      </Parameters>
+                    </Dry>
+                  </UnitOperation>
+              </body>
+            </while-loop>
+          </Loop>
+        </then>
+        <else>
+          <Loop>
+            <for-loop>
+              <iterations>5</iterations>
+              <body>
+                <UnitOperation>
+                    <Washing>
+                      <Parameters>
+                        <MaterialToBeWashed>Name or Description of Material to be Washed</MaterialToBeWashed>
+                        <Impurities>Types and Nature of Impurities to be Removed</Impurities>
+                        <WashingSolventOrMedium>Type of Washing Solvent or Medium</WashingSolventOrMedium>
+                        <WashingTemperature>Temperature value (°C)</WashingTemperature>
+                        <WashingTime>Duration of Washing (minutes or hours)</WashingTime>
+                        <AgitationOrMixing>Level of Agitation or Mixing</AgitationOrMixing>
+                        <NumberOfWashingSteps>Number of Washing Steps</NumberOfWashingSteps>
+                        <WashingVolumeOrRatio>Volume of Washing Solvent or Medium (e.g., mL or L)</WashingVolumeOrRatio>
+                        <FiltrationOrSeparation>Method of Filtration or Separation</FiltrationOrSeparation>
+                        <Drying>Method of Drying the Washed Material</Drying>
+                        <SafetyMeasures>Safety Precautions during Washing</SafetyMeasures>
+                        <ProductQualityControl>Quality Control Parameters or Tests</ProductQualityControl>
+                        <WasteTreatment>Waste Treatment for Washing Solvent/Medium</WasteTreatment>
+                      </Parameters>
+                    </Washing>
+                  </UnitOperation>
+              </body>
+            </for-loop>
+          </Loop>
+        </else>
+      </if>
+    </fork>
+
+    <UnitOperation>
+        <AddOnce>
+          <Parameters> 
+            <Reactant>...</Reactant>
+            <Amount>...</Amount>
+            <Timing>...</Timing>
+            <RateOfAddition>...</RateOfAddition>
+            <Temperature>...</Temperature>
+            <Pressure>...</Pressure>
+            <Stirring>...</Stirring>
+            <Solvent>...</Solvent>
+            <PH>...</PH>
+            <SafetyConsiderations>...</SafetyConsiderations>
+            <ReactionEnvironment>...</ReactionEnvironment>
+            <Equipment>...</Equipment>
+          </Parameters>
+        </AddOnce>
+      </UnitOperation>
+  </Sequences>
+  

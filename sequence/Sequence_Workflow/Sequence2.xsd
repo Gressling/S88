@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    Theoretically this should function for all Sequences; this checks for the root tag "Sequences", the children tags "UnitOperation", "Loop", "Break", "fork", "if", and "else" while ignoring the name of the Unit Operation and its Parameters. Peter D's python code should then process and verify the Unit Operations and Parameters. If notes are confusing check file 
+    Sequences/Example/3UnitOperations.xml and Sequences/Example/3UnitOperations.xsd for structure and/or ask Aaron A. 
+
+    This was successfully tested on Sequences/Example/3UnitOperations.xml . 
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Sequences">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UnitOperation" type="UnitOperationType"/>
+        <xs:element name="Loop" type="LoopType"/>
+        <xs:element name="Break" type="BreakType"/>
+        <xs:element name="fork" type="ForkType"/>
+        <xs:element name="if" type="IfType"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="UnitOperationType">
+    <xs:sequence>
+      <xs:any minOccurs="1" maxOccurs="unbounded" processContents="skip"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LoopType">
+    <xs:choice>
+      <xs:element name="for-loop" type="ForLoopType"/>
+      <xs:element name="while-loop" type="WhileLoopType"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="ForLoopType">
+    <xs:sequence>
+      <xs:element name="iterations" type="xs:int" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="body" type="LoopBodyType" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="WhileLoopType">
+    <xs:sequence>
+      <xs:element name="break-condition" type="BreakConditionType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="body" type="LoopBodyType" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LoopBodyType">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="UnitOperation" type="UnitOperationType"/>
+      <xs:element name="Loop" type="LoopType"/>
+      <xs:element name="Break" type="BreakType"/>
+      <xs:element name="fork" type="ForkType"/>
+      <xs:element name="if" type="IfType"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="BreakConditionType">
+    <xs:sequence>
+      <xs:element name="Condition" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="BreakType">
+    <xs:sequence>
+      <xs:element name="TargetStep" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ForkType">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="UnitOperation" type="UnitOperationType"/>
+      <xs:element name="Loop" type="LoopType"/>
+      <xs:element name="Break" type="BreakType"/>
+      <xs:element name="fork" type="ForkType"/>
+      <xs:element name="if" type="IfType"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="IfType">
+    <xs:sequence>
+      <xs:element name="condition" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="then" type="ThenType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="else" type="ElseType" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ThenType">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="UnitOperation" type="UnitOperationType"/>
+      <xs:element name="Loop" type="LoopType"/>
+      <xs:element name="Break" type="BreakType"/>
+      <xs:element name="fork" type="ForkType"/>
+      <xs:element name="if" type="IfType"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="ElseType">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="UnitOperation" type="UnitOperationType"/>
+      <xs:element name="Loop" type="LoopType"/>
+      <xs:element name="Break" type="BreakType"/>
+      <xs:element name="fork" type="ForkType"/>
+      <xs:element name="if" type="IfType"/>
+    </xs:choice>
+  </xs:complexType>
+
+</xs:schema>
