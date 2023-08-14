@@ -1,18 +1,18 @@
 # Solvent
 
-This unit operation is for prepare the reactor with the needed solvents.
+This unit operation is for preparing the reactor with the needed solvents.
 
 PartOf: Sequence
 
+<! -- unit="mol" is the default for molecule node amount -->
+ 
 Example
 
-´´´
+~~~ xml
 <solvent>
     <molecule>toluol</molecule>
-    <amount>250</amount>
-    <amountUnit>ml</amountUnit>
+    <amount unit="ml">250</amount>
     <molecule>propanol</molecule>
-    <amount>0.5</amount>
-    <amountUnit>l</amountUnit>
+    <amount unit="l">0.5</amount>  
 </solvent>
-´´´
+~~~
