@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Disposal">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Parameters">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="WasteType" type="xs:string"/>
+                    <xs:element name="DisposalMethod" type="xs:string"/>
+                    <xs:element name="SafetyConsiderations" type="xs:string"/>
+                    <xs:element name="Amount" type="xs:string"/>
+                    <xs:element name="Duration" type="xs:string"/>
+                    <xs:element name="Environment" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,13 @@
+<UnitOperation>
+    <Disposal>
+      <Parameters>
+        <WasteType>Chemical</WasteType>
+        <DisposalMethod>Follow local regulations for hazardous waste disposal.</DisposalMethod>
+        <SafetyConsiderations>Handle waste with proper protective equipment.</SafetyConsiderations>
+        <Amount>5 liters</Amount>
+        <Duration>1 hour</Duration>
+        <Environment>Laboratory</Environment>
+      </Parameters>
+    </Disposal>
+  </UnitOperation>
+  

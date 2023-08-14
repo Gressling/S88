@@ -1,0 +1,11 @@
+<UnitOperation>
+  <PreCleaning>
+    <Parameters>
+      <Materials>Lab equipment</Materials>
+      <Procedure>Thoroughly clean all equipment before the experiment.</Procedure>
+      <SafetyConsiderations>Dispose of waste properly.</SafetyConsiderations>
+      <Duration>30 minutes</Duration>
+      <Environment>Laboratory</Environment>
+    </Parameters>
+  </PreCleaning>
+</UnitOperation>

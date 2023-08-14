@@ -1,0 +1,12 @@
+<UnitOperation>
+    <PostCleaning>
+      <Parameters>
+        <Materials>Lab equipment, waste</Materials>
+        <Procedure>Clean and sanitize equipment after the experiment.</Procedure>
+        <SafetyConsiderations>Handle waste according to guidelines.</SafetyConsiderations>
+        <Duration>45 minutes</Duration>
+        <Environment>Laboratory</Environment>
+      </Parameters>
+    </PostCleaning>
+  </UnitOperation>
+  
