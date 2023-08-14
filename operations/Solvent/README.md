@@ -4,8 +4,10 @@ This unit operation is for preparing the reactor with the needed solvents.
 
 PartOf: Sequence
 
-<! -- unit="mol" is the default for molecule node amount -->
- 
+## Predefined assumptions
+* <! -- unit="mol" is the default for molecule node amount -->
+* 5 Minutes of manual work
+  
 Example
 
 ~~~ xml
