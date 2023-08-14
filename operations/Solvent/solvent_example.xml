@@ -1,8 +1,6 @@
 <solvent>
     <molecule>toluol</molecule>
-    <amount>250</amount>
-    <amountUnit>ml</amountUnit>
+    <amount unit="ml">250</amount>
     <molecule>propanol</molecule>
-    <amount>0.5</amount>
-    <amountUnit>l</amountUnit>
+    <amount unit="l">0.5</amount>  
 </solvent>
