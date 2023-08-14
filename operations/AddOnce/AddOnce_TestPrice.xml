@@ -1,0 +1,19 @@
+<UnitOperation>
+    <AddOnce>
+      <Parameters>
+        <Reactant>Ethanol</Reactant>
+        <Amount>100.0</Amount>
+        <Timing>At Start</Timing>
+        <RateOfAddition>...</RateOfAddition>
+        <Temperature>25.0</Temperature>
+        <Pressure>1.0</Pressure>
+        <Stirring>Medium</Stirring>
+        <Solvent>Water</Solvent>
+        <PH>7.0</PH>
+        <SafetyConsiderations>Wear gloves and goggles</SafetyConsiderations>
+        <ReactionEnvironment>Laboratory</ReactionEnvironment>
+        <Equipment>Glass flask</Equipment>
+      </Parameters>
+    </AddOnce>
+  </UnitOperation>
+  
