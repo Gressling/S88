@@ -1,5 +1,7 @@
 # S88-NG
 
+**Be invited to become a team member or suggest enhancements.**
+
 [![DOI](https://zenodo.org/badge/664350527.svg)](https://zenodo.org/badge/latestdoi/664350527)
 ![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Gressling/S88/3-alpha)
 ![GitHub contributors](https://img.shields.io/github/contributors/Gressling/S88)
