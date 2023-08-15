@@ -1,0 +1,11 @@
+<UnitOperation>
+    <Weighing>
+      <Parameters>
+        <Substance>Sample</Substance>
+        <Amount unit="g">5.0</Amount>
+        <Duration unit="minutes">10</Duration>
+        <BalanceType>Analytical balance</BalanceType>
+      </Parameters>
+    </Weighing>
+  </UnitOperation>
+  

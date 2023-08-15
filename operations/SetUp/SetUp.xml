@@ -1,0 +1,10 @@
+<UnitOperation>
+  <SetUp>
+    <Parameters>
+      <ExperimentName>Reaction A</ExperimentName>
+      <SetupInstructions>Assemble the glassware and connect the apparatus.</SetupInstructions>
+      <Duration unit="minutes">30</Duration>
+      <Equipment>Round-bottom flask, condenser, heating mantle</Equipment>
+    </Parameters>
+  </SetUp>
+</UnitOperation>

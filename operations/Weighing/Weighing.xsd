@@ -1,0 +1,40 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UnitOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Weighing">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Parameters">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Substance" type="xs:string"/>
+                    <xs:element name="Amount">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="unit" type="xs:string"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Duration">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="unit" type="xs:string"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="BalanceType" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
