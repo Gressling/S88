@@ -17,9 +17,9 @@ The orchestration uses UML eqivalent elements and only has the tags
             <Operation name="UnitOperation3b" />
           </ForkAgain>
         </Fork>
-        <Operation name="UnitOperation4" />
       </ForkAgain>
     </Fork>
+    <Operation name="UnitOperation4" />
 </Sequence>
 ~~~
 ![image](https://github.com/Gressling/S88-NG/assets/21124662/97d4b405-8fdb-430e-aa9e-0c59ebf306a9)
