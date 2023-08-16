@@ -11,12 +11,12 @@ The orchestration uses UML eqivalent elements and only has the tags
       <Operation name="UnitOperation1" />
       <Operation name="UnitOperation2" />
       <ForkAgain>
-        <Fork>
-          <Operation name="UnitOperation3a" />
-          <ForkAgain>
+            <Fork>
+            <Operation name="UnitOperation3a" />
+            <ForkAgain>
             <Operation name="UnitOperation3b" />
-          </ForkAgain>
-        </Fork>
+            </ForkAgain>
+            </Fork>
       </ForkAgain>
     </Fork>
     <Operation name="UnitOperation4" />
