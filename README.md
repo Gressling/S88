@@ -1,4 +1,4 @@
-# S88-NG
+# S88-light
 
 **Call to action: make suggestions or be invited to become a team member.**
 
