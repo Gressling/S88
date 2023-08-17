@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sequences>
+
+    <UnitOperation>
+        <PreCleaning>
+          <Parameters>
+            <Materials>Lab equipment</Materials>
+            <Procedure>Thoroughly clean all equipment before the experiment.</Procedure>
+            <SafetyConsiderations>Dispose of waste properly.</SafetyConsiderations>
+            <Duration>30 minutes</Duration>
+            <Environment>Laboratory</Environment>
+          </Parameters>
+        </PreCleaning>
+      </UnitOperation>
+
+  <Loop>
+    <for-loop>
+      <iterations>5</iterations>
+      <body>
+        <UnitOperation>
+            <material> Material 1</material>
+            <Reduction>
+                <Parameters>
+                  <ReactionConditions>
+                    <Temperature>°C</Temperature>
+                    <Pressure>atm</Pressure>
+                    <pH>unitless</pH>
+                  </ReactionConditions>
+                  <Reductant>Chemical Name</Reductant>
+                  <Catalyst>Chemical Name (if applicable)</Catalyst>
+                  <ReactionTime>minutes or hours</ReactionTime>
+                  <MolarRatio>stoichiometric ratio</MolarRatio>
+                  <Solvent>Chemical Name (if applicable)</Solvent>
+                  <Agitation>Yes/No</Agitation>
+                  <ReactionVessel>Type and Size</ReactionVessel>
+                  <InertAtmosphere>Yes/No</InertAtmosphere>
+                  <SafetyMeasures>Precautions taken</SafetyMeasures>
+                  <MonitoringAndControl>Methods used</MonitoringAndControl>
+                  <PostReactionTreatment>Steps involved</PostReactionTreatment>
+                </Parameters>
+              </Reduction>
+        </UnitOperation>
+      </body>
+    </for-loop>
+  </Loop>
+
+  <Fork>
+    <fork_again>
+        <UnitOperation>
+            <Preparing>
+              <Parameters>
+                <Materials>Lab equipment, reactants</Materials>
+                <Procedure>Set up equipment and prepare reactants.</Procedure>
+                <SafetyConsiderations>Wear appropriate safety gear.</SafetyConsiderations>
+                <Duration>1 hour</Duration>
+                <Environment>Laboratory</Environment>
+              </Parameters>
+            </Preparing>
+          </UnitOperation>
+    </fork_again>
+    <UnitOperation>
+        <SetUp>
+          <Parameters>
+            <device>device no. 12</device>
+            <ExperimentName>Reaction A</ExperimentName>
+            <SetupInstructions>Assemble the glassware and connect the apparatus.</SetupInstructions>
+            <Duration unit="minutes">30</Duration>
+            <Equipment>Round-bottom flask, condenser, heating mantle</Equipment>
+          </Parameters>
+        </SetUp>
+      </UnitOperation>
+    <Loop>
+      <while-loop>
+        <break-condition>
+          <Condition>Some condition</Condition>
+        </break-condition>
+        <body>
+            <UnitOperation>
+                <device> Device 1</device>
+                <Neutralization>
+                  <Parameters>
+                    <Acid>Acid Name</Acid>
+                    <Base>Base Name</Base>
+                    <ReactionTemperature>°C</ReactionTemperature>
+                    <ReactionTime>minutes or hours</ReactionTime>
+                    <StoichiometricRatio>stoichiometric ratio</StoichiometricRatio>
+                    <ReactionVessel>Vessel Type and Size</ReactionVessel>
+                    <Stirring>Yes/No</Stirring>
+                    <SafetyMeasures>Precautions taken</SafetyMeasures>
+                    <NeutralizationDegree>Desired degree of neutralization</NeutralizationDegree>
+                    <pHControl>Yes/No</pHControl>
+                    <PostNeutralizationTreatment>Steps involved</PostNeutralizationTreatment>
+                  </Parameters>
+                </Neutralization>
+              </UnitOperation>
+        </body>
+      </while-loop>
+    </Loop>
+  </Fork>
+
+</Sequences>

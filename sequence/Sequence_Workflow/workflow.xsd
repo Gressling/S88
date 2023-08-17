@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Sequences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="UnitOperation" type="UnitOperationType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="Loop" type="LoopType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="Fork" type="ForkType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="UnitOperationType">
+    <xs:sequence>
+      <xs:any minOccurs="1" maxOccurs="unbounded" processContents="skip"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LoopType">
+    <xs:choice>
+      <xs:element name="for-loop" type="ForLoopType"/>
+      <xs:element name="while-loop" type="WhileLoopType"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="ForLoopType">
+    <xs:sequence>
+      <xs:element name="iterations" type="xs:int" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="body" type="LoopBodyType" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="WhileLoopType">
+    <xs:sequence>
+      <xs:element name="break-condition" type="BreakConditionType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="body" type="LoopBodyType" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LoopBodyType">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="UnitOperation" type="UnitOperationType"/>
+      <xs:element name="Loop" type="LoopType"/>
+      <xs:element name="Fork" type="ForkType"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="ForkType">
+    <xs:sequence minOccurs="1">
+      <xs:element name="fork_again" type="ForkAgainType"/>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UnitOperation" type="UnitOperationType"/>
+        <xs:element name="Loop" type="LoopType"/>
+        <xs:element name="Fork" type="ForkType"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ForkAgainType">
+    <xs:choice minOccurs="1">
+      <xs:element name="Loop" type="LoopType"/>
+      <xs:element name="Fork" type="ForkType"/>
+      <xs:element name="UnitOperation" type="UnitOperationType"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="BreakConditionType">
+    <xs:sequence>
+      <xs:element name="Condition" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
