@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sequences>
+    <UnitOperation>
+        <material>500 ml Water</material>
+        <device> Crsytallmaker 4000</device>
+        <Crystallization>
+            <Parameters>
+                <Compound>...</Compound>
+                <Solvent>...</Solvent>
+                <Temperature>200 Kelvin</Temperature>
+                <CoolingRate>...</CoolingRate>
+                <StirringSpeed>...</StirringSpeed>
+                <CrystallizationTime>...</CrystallizationTime>
+                <SeedCrystal>...</SeedCrystal>
+                <SafetyConsiderations>...</SafetyConsiderations>
+                <Equipment>...</Equipment>
+                <CrystalSize>...</CrystalSize>
+                <CrystalShape>...</CrystalShape>
+                <CrystalPurity>...</CrystalPurity>
+                <Yield>...</Yield>
+                <NucleationInductionTime>...</NucleationInductionTime>
+                <GrowthRate>...</GrowthRate>
+                <Solubility>...</Solubility>
+                <CoolingProfile>...</CoolingProfile>
+                <Additives>...</Additives>
+                <pH>...</pH>
+                <SeedCrystalSize>...</SeedCrystalSize>
+            </Parameters>
+        </Crystallization>
+    </UnitOperation>
+
+    <UnitOperation>
+        <PostCleaning>
+          <Parameters>
+            <Materials>Lab equipment, waste</Materials>
+            <Procedure>Clean and sanitize equipment after the experiment.</Procedure>
+            <SafetyConsiderations>Handle waste according to guidelines.</SafetyConsiderations>
+            <Duration>45 minutes</Duration>
+            <Environment>Laboratory</Environment>
+          </Parameters>
+        </PostCleaning>
+      </UnitOperation>
+      
+    
+    <UnitOperation>
+        <material>1000 ml Solution</material>
+        <device> Mixer 2000</device>
+        <Mixing>
+            <Parameters>
+                <Components>...</Components>
+                <Solvent>...</Solvent>
+                <Temperature>25°C</Temperature>
+                <MixingSpeed>...</MixingSpeed>
+                <MixingTime>...</MixingTime>
+                <SafetyConsiderations>...</SafetyConsiderations>
+                <Equipment>...</Equipment>
+                <MixtureVolume>...</MixtureVolume>
+                <pH>...</pH>
+            </Parameters>
+        </Mixing>
+    </UnitOperation>
+</Sequences>
