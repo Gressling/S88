@@ -1,3 +1,21 @@
 <xml>
 
+<sequence>
+<UnitOperation0/>
+<sequence>
+    <UnitOperation1/>
+    <UnitOperation2/>
+</sequence>
+  <parallel id="1">
+    <UnitOperation3a/>
+    <paralell id="2">
+      <UnitOperation3b/>
+    </paralell>
+    <paralell id="3">
+      <UnitOperation3bc>
+    </paralell>
+  </parallel>
+<UnitOperation4/>
+</sequence>
+
 </xml>
