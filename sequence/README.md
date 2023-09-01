@@ -5,22 +5,27 @@ The orchestration uses UML eqivalent elements and only has the tags
 
 ## Example
 ~~~ xml
-<Sequence>
-    <Operation name="UnitOperation0" />
-    <Fork>
-      <Operation name="UnitOperation1" />
-      <Operation name="UnitOperation2" />
-      <ForkAgain>
-            <Fork>
-            <Operation name="UnitOperation3a" />
-            <ForkAgain>
-            <Operation name="UnitOperation3b" />
-            </ForkAgain>
-            </Fork>
-      </ForkAgain>
-    </Fork>
-    <Operation name="UnitOperation4" />
-</Sequence>
+<xml>
+
+<sequence>
+<UnitOperation0/>
+<sequence loop="0">
+    <UnitOperation1/>
+    <UnitOperation2 break="temp%gt70"/>
+</sequence>
+  <parallel id="1">
+    <UnitOperation3a/>
+    <paralell id="2">
+      <UnitOperation3b/>
+    </paralell>
+    <paralell id="3">
+      <UnitOperation3bc>
+    </paralell>
+  </paralell>
+<UnitOperation4/>
+</sequence>
+
+</xml>
 ~~~
 ![image](https://github.com/Gressling/S88-NG/assets/21124662/97d4b405-8fdb-430e-aa9e-0c59ebf306a9)
 
