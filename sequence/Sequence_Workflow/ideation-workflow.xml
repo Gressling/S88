@@ -2,9 +2,9 @@
 
 <sequence>
 <UnitOperation0/>
-<sequence>
+<sequence loop="0">
     <UnitOperation1/>
-    <UnitOperation2/>
+    <UnitOperation2 break="temp%gt70"/>
 </sequence>
   <parallel id="1">
     <UnitOperation3a/>
@@ -14,7 +14,7 @@
     <paralell id="3">
       <UnitOperation3bc>
     </paralell>
-  </parallel>
+  </paralell>
 <UnitOperation4/>
 </sequence>
 
