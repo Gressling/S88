@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Root element for the temperature profile -->
+  <Temperature name="">
+    <!-- Target temperature for this step -->
+    <TargetTemperature></TargetTemperature>
+
+    <!-- Duration for reaching/holding the target temperature, in seconds -->
+    <Duration></Duration>
+  </Temperature>
