@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <xs:element name = "UnitOperation">
+  <!-- Definition of the Stirring element -->
+  <xs:element name="Stirring">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name = "Stirring">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Parameters">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="StirringSpeed" type="xs:string"/>
-                    <xs:element name="StirringTime" type="xs:string"/>
-                    <xs:element name="StirringDirection" type="xs:string"/>
-                    <xs:element name="StirrerDesign" type="xs:string"/>
-                    <xs:element name="StirrerSizeAndShape" type="xs:string"/>
-                    <xs:element name="ContainerGeometry" type="xs:string"/>
-                    <xs:element name="Viscosity" type="xs:string"/>
-                    <xs:element name="Temperature" type="xs:string"/>
-                    <xs:element name="ShearRate" type="xs:string"/>
-                    <xs:element name="AdditionalAgitationMechanisms" type="xs:string"/>
-                    <xs:element name="SafetyMeasures" type="xs:string"/>
-                    <xs:element name="StirringRateProfiles" type="xs:string"/>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
+        <xs:element name="StirringSpeed" type="xs:integer"/>
+        <xs:element name="StirringTime" type="xs:integer"/>
+        <xs:element name="StirringDirection" type="xs:string"/>
+        <xs:element name="StirrerDesign" type="xs:string"/>
+        <xs:element name="StirrerSizeAndShape" type="xs:string"/>
+        <xs:element name="ContainerGeometry" type="xs:string"/>
+        <xs:element name="MaterialOfConstruction" type="xs:string"/>
+        <xs:element name="OperationalLimits" type="xs:string"/>
+        <xs:element name="Viscosity" type="xs:float"/>
+        <xs:element name="ShearRate" type="xs:integer"/>
+        <xs:element name="AdditionalAgitationMechanisms" type="xs:string"/>
+        <xs:element name="SafetyMeasures" type="xs:string"/>
+        <xs:element name="StirringRateProfiles" type="xs:string"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
 </xs:schema>
