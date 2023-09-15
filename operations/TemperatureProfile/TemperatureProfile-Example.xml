@@ -2,7 +2,7 @@
 <TemperatureProfile>
   <TemperatureStep name="RampUpTo50">
     <TargetTemperature>50</TargetTemperature>
-    <Duration>0</Duration>
+    <Duration>1500</Duration>
   </TemperatureStep>
   <TemperatureStep name="HoldAt50">
     <TargetTemperature>50</TargetTemperature>
@@ -10,7 +10,7 @@
   </TemperatureStep>
   <TemperatureStep name="RampUpTo110">
     <TargetTemperature>110</TargetTemperature>
-    <Duration>0</Duration>
+    <Duration>3600</Duration>
   </TemperatureStep>
   <TemperatureStep name="InfinitesimalCooldown">
     <TargetTemperature>Infinitesimal</TargetTemperature>
