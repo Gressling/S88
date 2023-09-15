@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Sequence>
   <Temperature name="RampUpTo50">
     <TargetTemperature>50</TargetTemperature>
