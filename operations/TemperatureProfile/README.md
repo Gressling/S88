@@ -16,7 +16,7 @@
     <Duration>0</Duration>
   </Temperature>
   <Temperature name="InfinitesimalCooldown">
-    <TargetTemperature>Infinitesimal</TargetTemperature>
+    <TargetTemperature></TargetTemperature>
     <Duration>0</Duration>
   </Temperature>
 </Sequence>
