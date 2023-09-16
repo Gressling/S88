@@ -1,4 +1,4 @@
-<Prepare>
+<Prepare device="defaultReactor">
     <Chemical>
         <Name>Toluol</Name>
         <Amount unit="ml">250</Amount>
