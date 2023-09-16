@@ -1,7 +1,8 @@
 # Sequence
 
-The orchestration uses UML eqivalent elements and only has the tags
-`<sequence>`, `<fork>` (with `<ForkAgain>`), and `<RepeatUntil>`. 
+The orchestration uses UML eqivalent elements and only has the tag
+`<sequence>`. Whenever this tag occurs it spans a parallel process (with
+the only exception if it is the first node.)
 
 ## Example
 ~~~ xml
