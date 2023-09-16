@@ -9,6 +9,20 @@
 
 **Documentation**: https://github.com/Gressling/S88/wiki
 ## Example
+
+### Textual Recipe for Aspirin Synthesis
+1 Stirring Setup: Initialize stirring at 500 RPM in a clockwise direction for a duration of 30 minutes.
+
+2 Temperature Control: Set the reaction environment to maintain a stable temperature of 50°C for 3600 seconds.
+
+Addition of Reactants:
+
+3a   Add 5 mL of Acetic anhydride immediately at a rate of 2 mL/min.
+
+3b   Add 4 g of Salicylic acid immediately at a rate of 1 g/min.
+
+### S88-light
+
 ~~~ xml
 <Sequence>
   <Stirring>
