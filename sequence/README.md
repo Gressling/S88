@@ -7,23 +7,23 @@ The orchestration uses UML eqivalent elements and only has the tags
 ~~~ xml
 <xml>
 
-<sequence>
+<Sequence>
 <UnitOperation0/>
-<sequence loop="0">
+<Sequence loop="0">
     <UnitOperation1/>
     <UnitOperation2 break="temp%gt70"/>
-</sequence>
-  <sequence id="1">
+</Sequence>
+  <Sequence id="1">
     <UnitOperation3a/>
-    <sequence id="2">
+    <Sequence id="2">
       <UnitOperation3b/>
-    </sequence>
-    <sequence id="3">
+    </Sequence>
+    <Sequence id="3">
       <UnitOperation3bc>
-    </sequence>
-  </sequence>
+    </Sequence>
+  </Sequence>
 <UnitOperation4/>
-</sequence>
+</Sequence>
 
 </xml>
 ~~~
