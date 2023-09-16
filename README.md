@@ -26,28 +26,44 @@ Addition of Reactants:
 ### S88-light
 
 ~~~ xml
+<Prepare device="defaultReactor">
+    <Chemical>
+        <Name>Toluol</Name>
+        <Amount unit="ml">250</Amount>
+    </Chemical>
+    <Chemical>
+        <Name>Propanol</Name>
+        <Amount unit="l">0.5</Amount>
+    </Chemical>
+</Prepare>
 <Stirring>
   <StirringSpeed>500</StirringSpeed>
-  <StirringTime>3600</StirringTime>
   <StirringDirection>Clockwise</StirringDirection>
 </Stirring>
-<Sequence> <!-- parallel process -->
-  <Temperature name="HoldAt50">
+<Parallel>
+  <Temperature name="RampUp50">
     <TargetTemperature>50</TargetTemperature>
-    <Duration>3600</Duration>
   </Temperature>
-</Sequence>
-<AddOnce>
-  <Reactant>Acetic anhydride</Reactant>
-  <Amount>5 mL</Amount>
-  <Timing>Immediate</Timing>
-  <RateOfAddition>2 mL/min</RateOfAddition>
-</AddOnce>
-<AddOnce>
-  <Reactant>Salicylic acid</Reactant>
-  <Amount>4 g</Amount>
-  <Timing>Immediate</Timing>
-  <RateOfAddition>1 g/min</RateOfAddition>
-</AddOnce>
+</Parallel>
+<Temperature name="Hold50">
+  <TargetTemperature>50</TargetTemperature>
+</Temperature>
+<Parallel> <!-- to hold Temperature -->
+  <AddOnce>
+    <Reactant>Acetic anhydride</Reactant>
+    <Amount>5 mL</Amount>
+    <Timing>Immediate</Timing>
+    <RateOfAddition>2 mL/min</RateOfAddition>
+  </AddOnce>
+  <AddOnce>
+    <Reactant>Salicylic acid</Reactant>
+    <Amount>4 g</Amount>
+    <Timing>Immediate</Timing>
+    <RateOfAddition>1 g/min</RateOfAddition>
+  </AddOnce>
+</Parallel>
+<ManualEnd>
+    <Timing>GutFeeling</Timing>
+</ManualEnd>
 ~~~
 
