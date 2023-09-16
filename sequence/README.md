@@ -13,15 +13,15 @@ The orchestration uses UML eqivalent elements and only has the tags
     <UnitOperation1/>
     <UnitOperation2 break="temp%gt70"/>
 </sequence>
-  <parallel id="1">
+  <sequence id="1">
     <UnitOperation3a/>
-    <paralell id="2">
+    <sequence id="2">
       <UnitOperation3b/>
-    </paralell>
-    <paralell id="3">
+    </sequence>
+    <sequence id="3">
       <UnitOperation3bc>
-    </paralell>
-  </paralell>
+    </sequence>
+  </sequence>
 <UnitOperation4/>
 </sequence>
 
