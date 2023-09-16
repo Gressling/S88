@@ -1,0 +1,35 @@
+<!-- Filtration Unit Operation for Aspirin Synthesis -->
+<Filtration>
+    <!-- Membrane Filter is used to separate acetylsalicylic acid crystals from solution -->
+    <FilterType>Membrane Filter</FilterType>
+    
+    <!-- Pore size selected to effectively trap acetylsalicylic acid crystals -->
+    <PoreSize>1 µm</PoreSize>
+    
+    <!-- Feed contains acetylsalicylic acid, unreacted salicylic acid, and acetic acid -->
+    <FeedSolution>Acetylsalicylic acid, Salicylic acid, Acetic acid</FeedSolution>
+    
+    <!-- Filtration rate optimized for yield and purity -->
+    <FiltrationRate>0.5 L/min</FiltrationRate>
+    
+    <!-- Effective filter area to ensure desired rate -->
+    <FilterArea>100 cm2</FilterArea>
+    
+    <!-- Time required to complete the filtration process -->
+    <FiltrationTime>30 minutes</FiltrationTime>
+    
+    <!-- Room temperature operation -->
+    <Temperature>25°C</Temperature>
+    
+    <!-- Operates under ambient pressure -->
+    <PressureOrVacuum>Pressure</PressureOrVacuum>
+    
+    <!-- No pre-filtration steps for this example -->
+    <PreFiltrationTreatment>None</PreFiltrationTreatment>
+    
+    <!-- Basic safety measures -->
+    <SafetyMeasures>Eye Protection, Lab Coat</SafetyMeasures>
+    
+    <!-- Regular filter cleaning protocols -->
+    <CleaningAndMaintenance>Clean with solvent, replace as needed</CleaningAndMaintenance>
+</Filtration>
