@@ -1,34 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="UnitOperation">
+  
+  <!-- Filtration Schema -->
+  <xs:element name="Filtration">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Filtration" type="FiltrationType"/>
+        
+        <!-- Filter Type -->
+        <xs:element name="FilterType" type="xs:string" />
+        
+        <!-- Pore Size -->
+        <xs:element name="PoreSize" type="xs:string" />
+        
+        <!-- Composition of Feed Solution -->
+        <xs:element name="FeedSolution" type="xs:string" />
+        
+        <!-- Filtration Rate -->
+        <xs:element name="FiltrationRate" type="xs:string" />
+        
+        <!-- Filter Area -->
+        <xs:element name="FilterArea" type="xs:string" />
+        
+        <!-- Filter Cake Thickness -->
+        <xs:element name="FilterCakeThickness" type="xs:string" minOccurs="0" />
+        
+        <!-- Filtration Time -->
+        <xs:element name="FiltrationTime" type="xs:string" />
+        
+        <!-- Temperature -->
+        <xs:element name="Temperature" type="xs:string" />
+        
+        <!-- Pressure or Vacuum -->
+        <xs:element name="PressureOrVacuum" type="xs:string" />
+        
+        <!-- Pre-Filtration Treatment -->
+        <xs:element name="PreFiltrationTreatment" type="xs:string" />
+        
+        <!-- Safety Measures -->
+        <xs:element name="SafetyMeasures" type="xs:string" />
+        
+        <!-- Cleaning And Maintenance -->
+        <xs:element name="CleaningAndMaintenance" type="xs:string" />
+        
+        <!-- Filtration Efficiency -->
+        <xs:element name="FiltrationEfficiency" type="xs:string" minOccurs="0" />
+        
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
-  <xs:complexType name="FiltrationType">
-    <xs:sequence>
-      <xs:element name="Parameters" type="ParametersType"/>
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="ParametersType">
-    <xs:sequence>
-      <xs:element name="FilterType" type="xs:string"/>
-      <xs:element name="PoreSize" type="xs:string"/>
-      <xs:element name="FeedSolution" type="xs:string"/>
-      <xs:element name="FiltrationRate" type="xs:string"/>
-      <xs:element name="FilterArea" type="xs:string"/>
-      <xs:element name="FilterCakeThickness" type="xs:string" minOccurs="0"/>
-      <xs:element name="FiltrationTime" type="xs:string"/>
-      <xs:element name="Temperature" type="xs:string"/>
-      <xs:element name="PressureOrVacuum" type="xs:string"/>
-      <xs:element name="PreFiltrationTreatment" type="xs:string"/>
-      <xs:element name="SafetyMeasures" type="xs:string"/>
-      <xs:element name="CleaningAndMaintenance" type="xs:string"/>
-      <xs:element name="FiltrationEfficiency" type="xs:string" minOccurs="0"/>
-    </xs:sequence>
-  </xs:complexType>
 </xs:schema>
