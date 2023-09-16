@@ -11,9 +11,9 @@
 ## Example
 
 ### Textual Recipe for Aspirin Synthesis
-1 Stirring Setup: Initialize stirring at 500 RPM in a clockwise direction for a duration of 30 minutes.
+1 Stirring Setup: Initialize stirring at 500 RPM in a clockwise direction for a duration of 60 minutes.
 
-2 Temperature Control: Set the reaction environment to maintain a stable temperature of 50°C for 3600 seconds.
+2 Temperature Control: Set the reaction environment to maintain a stable temperature of 50°C for one hour.
 
 Addition of Reactants:
 
@@ -21,35 +21,33 @@ Addition of Reactants:
 
 3b   Add 4 g of Salicylic acid immediately at a rate of 1 g/min.
 
+<img width="266" alt="image" src="https://github.com/Gressling/S88-light/assets/21124662/0ce7fa88-e691-4ce1-af70-38a3732adf80">
+
 ### S88-light
 
 ~~~ xml
-<Sequence>
-  <Stirring>
-    <StirringSpeed>500</StirringSpeed>
-    <StirringTime>30</StirringTime>
-    <StirringDirection>Clockwise</StirringDirection>
-  </Stirring>
-  <Sequence>
-    <Temperature name="HoldAt50">
-      <TargetTemperature>50</TargetTemperature>
-      <Duration>3600</Duration>
-    </Temperature>
-  </Sequence>
-  <Sequence>
-    <AddOnce>
-      <Reactant>Acetic anhydride</Reactant>
-      <Amount>5 mL</Amount>
-      <Timing>Immediate</Timing>
-      <RateOfAddition>2 mL/min</RateOfAddition>
-    </AddOnce>
-    <AddOnce>
-      <Reactant>Salicylic acid</Reactant>
-      <Amount>4 g</Amount>
-      <Timing>Immediate</Timing>
-      <RateOfAddition>1 g/min</RateOfAddition>
-    </AddOnce>
-  </Sequence>
+<Stirring>
+  <StirringSpeed>500</StirringSpeed>
+  <StirringTime>3600</StirringTime>
+  <StirringDirection>Clockwise</StirringDirection>
+</Stirring>
+<Sequence> <!-- parallel process -->
+  <Temperature name="HoldAt50">
+    <TargetTemperature>50</TargetTemperature>
+    <Duration>3600</Duration>
+  </Temperature>
 </Sequence>
+<AddOnce>
+  <Reactant>Acetic anhydride</Reactant>
+  <Amount>5 mL</Amount>
+  <Timing>Immediate</Timing>
+  <RateOfAddition>2 mL/min</RateOfAddition>
+</AddOnce>
+<AddOnce>
+  <Reactant>Salicylic acid</Reactant>
+  <Amount>4 g</Amount>
+  <Timing>Immediate</Timing>
+  <RateOfAddition>1 g/min</RateOfAddition>
+</AddOnce>
 ~~~
 
