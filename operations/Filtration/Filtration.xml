@@ -1,20 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<UnitOperation>
-  <Filtration>
-    <Parameters>
-      <FilterType>Filter Type (e.g., Filter Paper, Membrane Filter, Depth Filter)</FilterType>
-      <PoreSize>Filter Pore Size (µm or nm)</PoreSize>
-      <FeedSolution>Composition of Feed Solution</FeedSolution>
-      <FiltrationRate>Filtration Rate units (e.g., L/min or m3/h)</FiltrationRate>
-      <FilterArea>Filter Area units (e.g., cm2)</FilterArea>
-      <FilterCakeThickness>Filter Cake Thickness (optional, if applicable)</FilterCakeThickness>
-      <FiltrationTime>minutes or hours</FiltrationTime>
-      <Temperature>°C</Temperature>
-      <PressureOrVacuum>Pressure/Vacuum</PressureOrVacuum>
-      <PreFiltrationTreatment>Pre-filtration treatment steps</PreFiltrationTreatment>
-      <SafetyMeasures>Precautions taken during filtration</SafetyMeasures>
-      <CleaningAndMaintenance>Filter cleaning and maintenance procedures</CleaningAndMaintenance>
-      <FiltrationEfficiency>Filtration Efficiency (optional, if applicable)</FiltrationEfficiency>
-    </Parameters>
-  </Filtration>
-</UnitOperation>
+<!-- Filtration Unit Operation Parameters -->
+<Filtration>
+    <!-- Specifies the material of the filter -->
+    <FilterType>Filter Type (e.g., Filter Paper, Membrane Filter, Depth Filter)</FilterType>
+    
+    <!-- Indicates the pore size of the filter in micrometers or nanometers -->
+    <PoreSize>Filter Pore Size (µm or nm)</PoreSize>
+    
+    <!-- Describes the composition of the solution being filtered -->
+    <FeedSolution>Composition of Feed Solution</FeedSolution>
+    
+    <!-- States the rate of filtration in units like L/min or m3/h -->
+    <FiltrationRate>Filtration Rate units (e.g., L/min or m3/h)</FiltrationRate>
+    
+    <!-- Provides the effective area of the filter in square centimeters -->
+    <FilterArea>Filter Area units (e.g., cm2)</FilterArea>
+    
+    <!-- Optional, denoting the thickness of the deposited solid cake if applicable -->
+    <FilterCakeThickness>Filter Cake Thickness (optional, if applicable)</FilterCakeThickness>
+    
+    <!-- States the duration of filtration in minutes or hours -->
+    <FiltrationTime>minutes or hours</FiltrationTime>
+    
+    <!-- Notes the operating temperature in Celsius -->
+    <Temperature>°C</Temperature>
+    
+    <!-- Indicates if the process operates under pressure or vacuum conditions -->
+    <PressureOrVacuum>Pressure/Vacuum</PressureOrVacuum>
+    
+    <!-- Lists any treatment steps applied before filtration -->
+    <PreFiltrationTreatment>Pre-filtration treatment steps</PreFiltrationTreatment>
+    
+    <!-- Enumerates safety precautions during operation -->
+    <SafetyMeasures>Precautions taken during filtration</SafetyMeasures>
+    
+    <!-- Describes procedures for cleaning and maintaining the filter -->
+    <CleaningAndMaintenance>Filter cleaning and maintenance procedures</CleaningAndMaintenance>
+    
+    <!-- Optional, indicates the effectiveness of the filtration process if applicable -->
+    <FiltrationEfficiency>Filtration Efficiency (optional, if applicable)</FiltrationEfficiency>
+</Filtration>
+
