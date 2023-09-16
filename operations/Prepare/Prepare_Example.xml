@@ -1,0 +1,10 @@
+<Prepare>
+    <Chemical>
+        <Name>Toluol</Name>
+        <Amount unit="ml">250</Amount>
+    </Chemical>
+    <Chemical>
+        <Name>Propanol</Name>
+        <Amount unit="l">0.5</Amount>
+    </Chemical>
+</Prepare>
