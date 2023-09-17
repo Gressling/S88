@@ -21,7 +21,8 @@ Addition of Reactants:
 
 3b   Add 4 g of Salicylic acid immediately at a rate of 1 g/min.
 
-<img width="266" alt="image" src="https://github.com/Gressling/S88-light/assets/21124662/0ce7fa88-e691-4ce1-af70-38a3732adf80">
+<img width="539" alt="image" src="https://github.com/Gressling/S88-light/assets/21124662/0943d728-50fb-4672-92c1-1b38667edab0">
+
 
 ### S88-light
 
@@ -40,24 +41,23 @@ Addition of Reactants:
   <StirringSpeed>500</StirringSpeed>
   <StirringDirection>Clockwise</StirringDirection>
 </Stirring>
-<Parallel>
-  <Temperature name="RampUp50">
-    <TargetTemperature>50</TargetTemperature>
-  </Temperature>
-</Parallel>
-<Temperature name="Hold50">
+<Temperature name="RampUp50">
   <TargetTemperature>50</TargetTemperature>
 </Temperature>
-<Parallel> <!-- to hold Temperature -->
+<Parallel> <!-- to Temperature -->
   <AddOnce>
-    <Reactant>Acetic anhydride</Reactant>
-    <Amount>5 mL</Amount>
+    <Chemical>
+        <Name>Acetic anhydride</Name>
+        <Amount unit="ml">5</Amount>
+    </Chemical>
     <Timing>Immediate</Timing>
     <RateOfAddition>2 mL/min</RateOfAddition>
   </AddOnce>
   <AddOnce>
-    <Reactant>Salicylic acid</Reactant>
-    <Amount>4 g</Amount>
+    <Chemical>
+        <Name>Salicylic acid</Name>
+        <Amount unit="g">4</Amount>
+    </Chemical>
     <Timing>Immediate</Timing>
     <RateOfAddition>1 g/min</RateOfAddition>
   </AddOnce>
