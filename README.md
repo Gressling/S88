@@ -38,29 +38,29 @@ Addition of Reactants:
     </Chemical>
 </Prepare>
 <Stirring>
-  <StirringSpeed>500</StirringSpeed>
-  <StirringDirection>Clockwise</StirringDirection>
+    <StirringSpeed>500</StirringSpeed>
+    <StirringDirection>Clockwise</StirringDirection>
 </Stirring>
 <Temperature name="RampUp50">
-  <TargetTemperature>50</TargetTemperature>
+    <TargetTemperature>50</TargetTemperature>
 </Temperature>
-<Parallel> <!-- to Temperature -->
-  <AddOnce>
+<AddOnce>
     <Chemical>
         <Name>Acetic anhydride</Name>
         <Amount unit="ml">5</Amount>
     </Chemical>
     <Timing>Immediate</Timing>
     <RateOfAddition>2 mL/min</RateOfAddition>
-  </AddOnce>
-  <AddOnce>
-    <Chemical>
-        <Name>Salicylic acid</Name>
-        <Amount unit="g">4</Amount>
-    </Chemical>
-    <Timing>Immediate</Timing>
-    <RateOfAddition>1 g/min</RateOfAddition>
-  </AddOnce>
+</AddOnce>
+<Parallel> <!-- to AddOnce -->
+    <AddOnce>
+        <Chemical>
+            <Name>Salicylic acid</Name>
+            <Amount unit="g">4</Amount>
+        </Chemical>
+        <Timing>Immediate</Timing>
+        <RateOfAddition>1 g/min</RateOfAddition>
+    </AddOnce>
 </Parallel>
 <ManualEnd>
     <Timing>GutFeeling</Timing>
