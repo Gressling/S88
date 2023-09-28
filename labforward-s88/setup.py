@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="labforward-api-library",
+    name="labforward-s88-light",
     version="0.1",
     packages=find_packages(),
     install_requires=[
@@ -17,5 +17,5 @@ setup(
     author="Peter Dinh & Alexander Reiling",
     author_email="peter.dinh@bayer.com",
     description="A Python library for interacting with LabForward APIs and creating a XML or dataframe from Laboperator at Bayer",
-    url="https://github.com/Gressling/S88-light/tree/main/labforward",
+    url="https://github.com/Gressling/S88-light/tree/main/labforward-s88",
 )
